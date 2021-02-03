@@ -1,0 +1,44 @@
+cur_dir := $(dir $(lastword $(MAKEFILE_LIST)))
+
+obj-y := $(patsubst $(cur_dir)%,%,$(wildcard $(cur_dir)*.c $(cur_dir)*.S $(cur_dir)*.cpp))
+obj-y := $(obj-y:.c=.o)
+obj-y := $(obj-y:.S=.o)
+obj-y := $(obj-y:.cpp=.o)
+
+ifeq ($(DSP_LIB),1)
+obj-y += DSP_Lib/
+endif
+
+ifneq ($(filter a%,$(CPU)),)
+obj-y += ca/
+endif
+
+ccflags-y := -I$(obj)/inc
+
+FAULT_FLAGS :=
+USAGE_FAULT ?= 1
+ifeq ($(USAGE_FAULT),1)
+FAULT_FLAGS += -DUSAGE_FAULT
+endif
+BUS_FAULT ?= 1
+ifeq ($(BUS_FAULT),1)
+FAULT_FLAGS += -DBUS_FAULT
+endif
+MEM_FAULT ?= 1
+ifeq ($(MEM_FAULT),1)
+FAULT_FLAGS += -DMEM_FAULT
+endif
+CFLAGS_system_ARMCM.o += $(FAULT_FLAGS)
+CFLAGS_system_cp.o += $(FAULT_FLAGS)
+
+ifeq ($(NOSTD),1)
+CFLAGS_system_utils.o += -DNOSTD
+CFLAGS_retarget.o += -DNOSTD
+endif
+ifeq ($(ACCURATE_DB_TO_FLOAT),1)
+CFLAGS_system_utils.o += -DACCURATE_DB_TO_FLOAT
+endif
+ifeq ($(BOOT_CODE_IN_RAM),1)
+CFLAGS_system_utils.o += -DBOOT_CODE_IN_RAM
+endif
+
