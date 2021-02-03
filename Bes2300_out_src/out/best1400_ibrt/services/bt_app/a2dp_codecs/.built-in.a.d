@@ -1,0 +1,2 @@
+
+cmd_services/bt_app/a2dp_codecs/built-in.a := ( /usr/bin/printf 'create services/bt_app/a2dp_codecs/built-in.a\n addmod services/bt_app/a2dp_codecs/app_a2dp_codecs.o,services/bt_app/a2dp_codecs/ldac/a2dp_codec_ldac.o,services/bt_app/a2dp_codecs/scalable/a2dp_codec_scalable.o,services/bt_app/a2dp_codecs/sbc/a2dp_codec_sbc.o,services/bt_app/a2dp_codecs/aac/a2dp_codec_aac.o,services/bt_app/a2dp_codecs/opus/a2dp_codec_opus.o,services/bt_app/a2dp_codecs/lhdc/codec_lhdc.o,services/bt_app/a2dp_codecs/lhdc/a2dp_codec_lhdc.o\n save\nend' | arm-none-eabi-ar -M )
