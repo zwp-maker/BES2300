@@ -1,0 +1,2094 @@
+[15:11:32.580] þ`*
+[15:11:33.200] 
+
+
+CHIP=best1400
+KERNEL=RTX
+CRASH_DUMP_SIZE=0
+AUD_SEC_SIZE=0
+USER_SEC_SIZE=0x1000
+FACT_SEC_SIZE=0x1000
+NV_REC_DEV_VER=2
+FLASH_BASE=0x38000000
+FLASH_SIZE=0x100000
+CRC32_OF_IMAGE=0x00000000
+BUILD_DATE=Jan 27 2021 15:09:23
+REV_INFO=7dac5f6-dirty:best1400_ibrt
+[15:11:33.204] 
+
+------
+METAL_ID: 5
+------
+
+[15:11:33.222]       644/  1 | Dc calib L OK: 0x004a
+      649/  1 | Dc calib R OK: 0x8040
+      651/  1 | ANA: DC CALIB L=0x004A/74 R=0x0040/64
+[15:11:33.296]       723/  1 | FLASH_ID: 85-60-14
+      723/  1 | _sbrk: incr 0 cur=0x2001f048
+
+      723/  1 | _sbrk: incr 32 cur=0x2001f048
+
+[15:11:33.311]       732/  1 | Current is  Left Ear!!!!!
+      733/  1 | 
+The hal_sw_bootmode value is 230 
+
+      733/  1 | please check all sections sizes and heads is correct ........
+      733/  1 | __coredump_section_start: 0x380fb000 length: 0x0
+      733/  1 | __ota_upgrade_log_start: 0x380fb000 length: 0x0
+      733/  1 | __log_dump_start: 0x380fb000 length: 0x0
+      733/  1 | __crash_dump_start: 0x380fb000 length: 0x0
+      733/  1 | __custom_parameter_start: 0x380fb000 length: 0x1000
+      734/  1 | __userdata_start: 0x380fc000 length: 0x2000
+      734/  1 | __aud_start: 0x380fe000 length: 0x0
+      734/  1 | __factory_start: 0x380ff000 length: 0x1000
+      734/  1 | app_init
+
+      734/  1 | nv ext magic 0xffffffff valid len -1
+      735/  1 | set mpu 0x200027e0 len 128
+      736/  1 | BATTERY 2
+      737/  1 | CHARGING PWRON!
+      737/  1 | app_poweron_key_init
+      737/11E | app_battery_charger_handler: status=0
+      737/  3 | app_battery_pluginout_debounce_start
+      738/  1 | nvrec_dev_data_open,vermagic=0x2ba80
+      738/  1 | Nv record dev version 2
+      738/  1 | nvrec_dev_data_open: data len 0x140,dev_zone_flsh_crc=0x30141f42,dev_zone_crc=0x30141f42
+      738/  1 | nvrec_dev_data_open: nv rec dev is valid.
+      738/  1 | factory_section_open sucess btname:zwp_bt
+12 34 33 22 11 11 
+fa 9b c2 56 34 12 
+      738/  1 | app_bt_stream_volume_ptr_update default
+[15:11:33.411]       836/  2 | app_battery_pluginout_debounce_handler PLUGIN
+      837/  2 | PLUGIN123 
+      837/  3 | CHARGING:1/0
+      837/  3 | app_battery_charger_handle_process currvolt:4200 chg:1
+[15:11:33.421]       849/  1 | btdrv_SendData
+01 02 fc 0a 00 01 00 c0 20 04 cb f1 ca bc 
+      850/36E | tx
+      851/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      852/  1 | btdrv_SendData
+01 02 fc 66 58 77 00 c0 20 60 2d e9 0f 40 30 46 00 f0 05 f8 bd e8 0f 40 34 f6 51 bb 00 00 10 b5 04 46 0c 4b 98 47 0c 4b 18 60 04 33 1b 78 db b2 03 2b 05 d0 02 2c 09 d0 10 2c 0a d1 04 20 06 e0 07 4b 1b 78 db b2 06 4a 13 70 f3 e7 02 20 05 4b 98 47 10 bd 00*      854/36E | tx
+      854/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      856/  1 | btdrv_SendData
+01 02 fc 0a 08 20 00 e0 20 04 c1 bd 03 00 
+      857/36E | tx
+      857/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      859/  1 | btdrv_SendData
+01 02 fc 0a 04 01 00 c0 20 04 f5 f1 e6 bf 
+[15:11:33.442]       863/36E | tx
+      863/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      865/  1 | btdrv_SendData
+01 02 fc 2e 0c 6c 00 c0 20 28 08 4b 1b 68 33 b9 32 f6 db ff 00 28 0c bf 01 20 04 20 00 e0 01 20 35 f6 4d f8 00 20 01 4b 18 60 0a f6 09 b8 34 74 00 c0 
+      866/36E | tx
+      866/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      868/  1 | btdrv_SendData
+01 02 fc 0a 0c 20 00 e0 20 04 3d 0c 01 00 
+[15:11:33.452]       873/36E | tx
+      873/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      875/  1 | btdrv_SendData
+01 02 fc 0a 08 01 00 c0 20 04 f0 f1 80 b9 
+      876/36E | tx
+      876/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      878/  1 | btdrv_SendData
+01 02 fc 2a 38 6c 00 c0 20 24 08 b5 04 4b 1b 68 01 2b 02 d1 01 20 fa f5 00 fb 08 bd 00 bf 68 76 00 c0 0d f6 56 fd ff f7 f0 ff 0f f6 7a be 
+[15:11:33.462]       882/36E | tx
+      882/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      884/  1 | btdrv_SendData
+01 02 fc 0a 10 20 00 e0 20 04 4d 69 01 00 
+      885/36E | tx
+      885/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      887/  1 | btdrv_SendData
+01 02 fc 0a 0c 01 00 c0 20 04 f0 f1 ae bd 
+      888/36E | tx
+      889/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      890/  1 | btdrv_SendData
+01 02 fc 16 88 6c 00 c0 20 10 28 46 00 bf 0d f6 c4 fd 28 46 14 21 0f f6 4a ba 
+      891/36E | tx
+      892/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      893/  1 | btdrv_SendData
+01 02 fc 0a 14 20 00 e0 20 04 29 61 01 00 
+      898/36E | tx
+      898/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      900/  1 | btdrv_SendData
+01 02 fc 0a 10 01 00 c0 20 04 d4 f1 70 ba 
+      901/36E | tx
+      901/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      903/  1 | btdrv_SendData
+01 02 fc 22 b8 69 00 c0 20 1c 40 b9 33 f6 6d f8 01 28 04 d1 33 f6 03 f9 00 28 02 d1 00 bf 2b f6 84 bd 2b f6 02 be 
+      908/36E | tx
+      908/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      910/  1 | btdrv_SendData
+01 02 fc 0a 18 20 00 e0 20 04 d5 24 03 00 
+      914/36E | tx
+      914/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      916/  1 | btdrv_SendData
+01 02 fc 0a 14 01 00 c0 20 04 d2 f1 38 bf 
+      921/36E | tx
+      921/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      923/  1 | btdrv_SendData
+01 02 fc 26 d4 69 00 c0 20 20 88 46 ab 79 6f ea 83 63 23 f0 78 45 09 9b d3 f8 8c 30 06 99 0b 44 2b 40 41 46 00 bf 2d f6 bd b8 
+      927/36E | tx
+      927/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      929/  1 | btdrv_SendData
+01 02 fc 0a 1c 20 00 e0 20 04 61 3b 03 00 
+[15:11:33.512]       934/36E | tx
+      934/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      936/  1 | btdrv_SendData
+01 02 fc 0a 18 01 00 c0 20 04 cd f1 42 b9 
+      940/36E | tx
+      940/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      942/  1 | btdrv_SendData
+01 02 fc 1a f8 69 00 c0 20 14 04 33 03 4a 53 81 00 bf 40 f6 c4 12 32 f6 b9 be c0 62 00 c0 
+      947/36E | tx
+      947/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      949/  1 | btdrv_SendData
+01 02 fc 0a 20 20 00 e0 20 04 71 97 03 00 
+      954/36E | tx
+      954/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      956/  1 | btdrv_SendData
+01 02 fc 0a 1c 01 00 c0 20 04 f7 f1 b6 b8 
+      960/36E | tx
+      960/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      962/  1 | btdrv_SendData
+01 02 fc 1e 10 6a 00 c0 20 18 00 23 ab 71 d9 f8 00 00 10 b1 0c 38 fa f5 f6 f8 00 23 00 bf 08 f6 3e bf 
+      963/36E | tx
+      963/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      965/  1 | btdrv_SendData
+01 02 fc 0a 24 20 00 e0 20 04 a1 f8 00 00 
+      966/36E | tx
+      966/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      968/  1 | btdrv_SendData
+01 02 fc 0a 20 01 00 c0 20 04 ee f1 62 bc 
+[15:11:33.551]       973/36E | tx
+      973/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      975/  1 | btdrv_SendData
+01 02 fc 16 e4 77 00 c0 20 10 01 20 86 f8 60 00 86 f8 61 00 00 bf 11 f6 a3 bb 
+      979/36E | tx
+      979/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      981/  1 | btdrv_SendData
+01 02 fc 0a 28 20 00 e0 20 04 1d 8f 01 00 
+      982/36E | tx
+      982/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      984/  1 | btdrv_SendData
+01 02 fc 0a 24 01 00 c0 20 04 e3 f1 d6 ba 
+      989/36E | tx
+      989/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      991/  1 | btdrv_SendData
+01 02 fc 2a 2c 6a 00 c0 20 24 28 46 2a f6 f7 fe 20 46 0f f6 76 ff 04 4b 53 f8 25 30 20 46 93 f8 5e 13 fa f5 68 fc 00 20 70 bd e4 5d 00 c0 
+      992/36E | tx
+      992/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      994/  1 | btdrv_SendData
+01 02 fc 0a 2c 20 00 e0 20 04 7d 34 02 00 
+      995/36E | tx
+      995/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+      997/  1 | btdrv_SendData
+01 02 fc 0a 28 01 00 c0 20 04 cb f1 66 bc 
+      998/36E | tx
+      998/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1000/  1 | btdrv_SendData
+01 02 fc 0e 54 6a 00 c0 20 08 04 f1 18 08 34 f6 9f bb 
+     1001/36E | tx
+     1001/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1003/  1 | btdrv_SendData
+01 02 fc 0a 30 20 00 e0 20 04 85 b1 03 00 
+     1004/36E | tx
+     1004/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1006/  1 | btdrv_SendData
+01 02 fc 0a 2c 01 00 c0 20 04 c9 f1 ae be 
+     1007/36E | tx
+     1007/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1009/  1 | btdrv_SendData
+01 02 fc 32 68 6a 00 c0 20 2c 09 4b 93 f8 84 30 13 f0 06 0f 05 d0 20 46 37 f6 05 f8 01 46 00 24 05 e0 03 4b 93 f8 84 30 00 bf 36 f6 41 b9 36 f6 87 b9 68 65 00 c0 
+     1010/36E | tx
+     1010/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1012/  1 | btdrv_SendData
+01 02 fc 0a 34 20 00 e0 20 04 09 cd 03 00 
+     1017/36E | tx
+     1017/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1019/  1 | btdrv_SendData
+01 02 fc 0a 30 01 00 c0 20 04 04 e0 00 bf 
+     1020/36E | tx
+     1020/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+[15:11:33.602]      1022/  1 | btdrv_SendData
+01 02 fc 0a 38 20 00 e0 20 04 f1 cb 03 00 
+     1026/36E | tx
+     1026/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1028/  1 | btdrv_SendData
+01 02 fc 0a 34 01 00 c0 20 04 d9 f1 d8 bd 
+     1029/36E | tx
+     1029/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+[15:11:33.612]      1031/  1 | btdrv_SendData
+01 02 fc 86 98 6a 00 c0 20 80 03 98 04 99 70 b4 12 4b 5a 5c 0e 01 11 4d 73 19 11 4c 24 78 a2 42 03 d2 98 54 01 32 d2 b2 01 e0 70 55 01 22 0a 48 42 54 4c b1 1a 46 19 19 00 23 12 f9 01 0b 03 44 00 bf 8a 42 f9 d1 00 e0 00 23 93 fb f4 f0 40 b2 70 bc 04 99 01*     1036/36E | tx
+     1036/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1038/  1 | btdrv_SendData
+01 02 fc 1e 18 6b 00 c0 20 18 ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba ba 
+     1039/36E | tx
+     1039/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1041/  1 | btdrv_SendData
+01 02 fc 0a 3c 20 00 e0 20 04 e5 ce 02 00 
+     1042/36E | tx
+     1042/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1044/  1 | btdrv_SendData
+01 02 fc 0a 38 01 00 c0 20 04 f2 f1 c4 b9 
+     1045/36E | tx
+     1045/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1047/  1 | btdrv_SendData
+01 02 fc 1e c8 6b 00 c0 20 18 93 f8 5a 30 00 2b 03 d1 40 f2 f4 12 02 e0 00 bf 40 f6 b8 32 0d f6 30 be 
+[15:11:33.632]      1052/36E | tx
+     1052/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1054/  1 | btdrv_SendData
+01 02 fc 0a 40 20 00 e0 20 04 3d 48 01 00 
+     1058/36E | tx
+     1058/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1060/  1 | btdrv_SendData
+01 02 fc 0a 3c 01 00 c0 20 04 db f1 be bd 
+     1061/36E | tx
+     1061/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1063/  1 | btdrv_SendData
+01 02 fc 56 3c 6b 00 c0 20 50 43 f8 28 20 08 4b 43 f8 28 20 05 4b 1a 70 0e 4b 1a 70 01 22 08 4b 43 f8 28 20 00 bf 24 f6 32 ba 60 6b 00 c0 00 00 00 00 68 6b 00 c0 00 00 00 00 00 00 00 00 00 00 00 00 78 6b 00 c0 01 00 00 00 01 00 00 00 01 00 00 00 88 6b 00*     1068/36E | tx
+     1068/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1070/  1 | btdrv_SendData
+01 02 fc 0a 44 20 00 e0 20 04 bd af 02 00 
+     1071/36E | tx
+     1071/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1073/  1 | btdrv_SendData
+01 02 fc 0a 40 01 00 c0 20 04 d6 f1 bc bd 
+     1074/36E | tx
+     1074/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1076/  1 | btdrv_SendData
+01 02 fc 1a 90 6b 00 c0 20 14 94 f8 46 00 25 f6 94 fe 02 28 01 d8 29 f6 3e ba 29 f6 57 ba 
+     1077/36E | tx
+     1077/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1079/  1 | btdrv_SendData
+01 02 fc 0a 48 20 00 e0 20 04 15 00 03 00 
+[15:11:33.662]      1084/36E | tx
+     1084/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1086/  1 | btdrv_SendData
+01 02 fc 0a 44 01 00 c0 20 04 d6 f1 66 bb 
+     1087/36E | tx
+     1087/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1089/  1 | btdrv_SendData
+01 02 fc 26 a4 6b 00 c0 20 20 02 20 06 f6 37 f9 02 28 08 d1 98 f8 b2 00 25 f6 85 fe 02 28 02 d8 00 bf 29 f6 93 bc 29 f6 98 bc 
+[15:11:33.672]      1093/36E | tx
+     1093/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1095/  1 | btdrv_SendData
+01 02 fc 0a 4c 20 00 e0 20 04 d5 04 03 00 
+     1096/36E | tx
+     1096/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1098/  1 | btdrv_SendData
+01 02 fc 0a 48 01 00 c0 20 04 ed f1 e4 b8 
+     1099/36E | tx
+     1099/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1101/  1 | btdrv_SendData
+01 02 fc 16 bc 6c 00 c0 20 10 32 f6 d4 fe 01 46 04 20 35 f6 ae f8 12 f6 15 bf 
+     1102/36E | tx
+     1102/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1104/  1 | btdrv_SendData
+01 02 fc 0a 50 20 00 e0 20 04 f1 9a 01 00 
+     1105/36E | tx
+     1106/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1107/  1 | btdrv_SendData
+01 02 fc 0a 4c 01 00 c0 20 04 fe f1 f8 b8 
+[15:11:33.691]      1112/36E | tx
+     1112/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1114/  1 | btdrv_SendData
+01 02 fc 66 18 6d 00 c0 20 60 08 b5 03 46 ef f3 10 82 12 f0 01 0f 12 d1 72 b6 11 48 a3 f5 43 53 28 3b 10 49 a1 fb 03 23 c3 f3 87 23 03 eb 43 03 00 eb 83 01 94 31 fc f5 d0 fd 62 b6 08 bd 08 48 a3 f5 43 53 28 3b 07 49 a1 fb 03 23 c3 f3 87 23 03 eb 43 03 00*     1115/36E | tx
+     1115/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1117/  1 | btdrv_SendData
+01 02 fc 0a 54 20 00 e0 20 04 25 8b 00 00 
+[15:11:33.702]      1122/36E | tx
+     1122/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1124/  1 | btdrv_SendData
+01 02 fc 0a 50 01 00 c0 20 04 e3 f1 5c ba 
+     1125/36E | tx
+     1125/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1127/  1 | btdrv_SendData
+01 02 fc 3a c4 6d 00 c0 20 34 10 b5 0c 46 fa f5 fa fa 70 28 04 d9 b4 f1 7e 00 18 bf 01 20 10 bd 00 20 10 bd 00 bf 21 46 ff f7 ef ff 00 28 04 d1 28 46 fa f5 e8 fa 1c f6 9a bd 1d f6 5f b8 
+     1131/36E | tx
+     1131/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1133/  1 | btdrv_SendData
+01 02 fc 0a 58 20 00 e0 20 04 25 39 02 00 
+     1134/36E | tx
+     1134/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1136/  1 | btdrv_SendData
+01 02 fc 0a 54 01 00 c0 20 04 eb f1 fc bb 
+     1137/36E | tx
+     1137/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1139/  1 | btdrv_SendData
+01 02 fc 36 00 6e 00 c0 20 30 97 f8 40 20 01 2a 11 d1 06 f1 09 01 08 46 fc f5 4b fd 13 28 02 d8 1e 22 14 f6 54 bc 32 7a 01 2a 01 d8 14 f6 f6 bb 1e 22 14 f6 4c bc 14 f6 47 bc 
+     1144/36E | tx
+     1144/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1146/  1 | btdrv_SendData
+01 02 fc 0a 5c 20 00 e0 20 04 05 b6 01 00 
+     1147/36E | tx
+     1147/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1149/  1 | btdrv_SendData
+01 02 fc 0a 58 01 00 c0 20 04 f5 f1 d0 b8 
+     1150/36E | tx
+     1150/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1152/  1 | btdrv_SendData
+01 02 fc 0e 34 6e 00 c0 20 08 9a 72 02 22 9a 71 38 bd 
+     1157/36E | tx
+     1157/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1159/  1 | btdrv_SendData
+01 02 fc 0a 60 20 00 e0 20 04 91 1c 01 00 
+     1160/36E | tx
+     1160/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1162/  1 | btdrv_SendData
+01 02 fc 0a 5c 01 00 c0 20 04 cd f1 0a b9 
+     1166/36E | tx
+     1166/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1168/  1 | btdrv_SendData
+01 02 fc 16 44 77 00 c0 20 10 32 f6 c6 f9 03 46 19 02 01 f4 7f 41 32 f6 ef be 
+     1169/36E | tx
+     1169/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1171/  1 | btdrv_SendData
+01 02 fc 0a 64 20 00 e0 20 04 2d a5 03 00 
+     1176/36E | tx
+     1176/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1178/  1 | btdrv_SendData
+01 02 fc 0a 60 01 00 c0 20 04 12 e0 00 bf 
+     1179/36E | tx
+     1179/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1181/  1 | btdrv_SendData
+01 02 fc 0a 68 20 00 e0 20 04 91 24 00 00 
+     1185/36E | tx
+     1185/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1187/  1 | btdrv_SendData
+01 02 fc 0a 64 01 00 c0 20 04 e3 f1 b4 b8 
+     1188/36E | tx
+     1188/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1190/  1 | btdrv_SendData
+01 02 fc 1a 94 6e 00 c0 20 14 02 0a 02 2a 04 d8 00 bf 00 f4 7f 42 1c f6 44 bf 1d f6 07 b8 
+     1191/36E | tx
+     1191/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1193/  1 | btdrv_SendData
+01 02 fc 0a 6c 20 00 e0 20 04 29 3d 02 00 
+     1194/36E | tx
+     1194/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1196/  1 | btdrv_SendData
+01 02 fc 0a 68 01 00 c0 20 04 38 bd 00 bf 
+     1197/36E | tx
+     1198/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1199/  1 | btdrv_SendData
+01 02 fc 0a 70 20 00 e0 20 04 45 3f 01 00 
+[15:11:33.782]      1204/36E | tx
+     1204/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1206/  1 | btdrv_SendData
+01 02 fc 0a 6c 01 00 c0 20 04 da f1 58 be 
+     1207/36E | tx
+     1207/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1209/  1 | btdrv_SendData
+01 02 fc 12 60 6c 00 c0 20 0c 32 f6 88 fe ff f7 e8 ff 25 f6 a2 b9 
+[15:11:33.791]      1213/36E | tx
+     1214/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1215/  1 | btdrv_SendData
+01 02 fc 0a 74 20 00 e0 20 04 ad bf 02 00 
+     1220/36E | tx
+     1220/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1222/  1 | btdrv_SendData
+01 02 fc 0a 70 01 00 c0 20 04 20 7b 02 e0 
+     1223/36E | tx
+     1223/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1225/  1 | btdrv_SendData
+01 02 fc 0a 78 20 00 e0 20 04 7b e4 00 00 
+     1226/36E | tx
+     1226/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1228/  1 | btdrv_SendData
+01 02 fc 0a 74 01 00 c0 20 04 d6 f1 34 bd 
+     1229/36E | tx
+     1229/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1231/  1 | btdrv_SendData
+01 02 fc 1e b0 6e 00 c0 20 18 04 4b 93 f8 c2 31 02 2b 0c bf 0f 23 14 23 ab 75 29 f6 c2 ba a8 5e 00 c0 
+     1232/36E | tx
+     1232/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1234/  1 | btdrv_SendData
+01 02 fc 0a 7c 20 00 e0 20 04 45 04 03 00 
+     1239/36E | tx
+     1239/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1241/  1 | btdrv_SendData
+01 02 fc 0a 78 01 00 c0 20 04 cb f1 54 ba 
+     1245/36E | tx
+     1245/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1247/  1 | btdrv_SendData
+01 02 fc 2e cc 6e 00 c0 20 28 02 28 0a d8 08 b5 05 4b 53 f8 20 30 23 b1 93 f8 c4 10 05 22 1d f6 86 fe 08 bd 70 47 d4 09 00 c0 ff f7 ee ff 34 f6 a8 bd 
+     1252/36E | tx
+     1252/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1254/  1 | btdrv_SendData
+01 02 fc 0a 80 20 00 e0 20 04 41 ba 03 00 
+     1255/36E | tx
+     1255/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1257/  1 | btdrv_SendData
+01 02 fc 0a 7c 01 00 c0 20 04 d6 f1 be bc 
+     1261/36E | tx
+     1261/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1263/  1 | btdrv_SendData
+01 02 fc 1a f8 6e 00 c0 20 14 20 b9 32 f6 c1 fd 00 28 02 d0 00 bf 29 f6 3a bb 29 f6 a2 bb 
+     1268/36E | tx
+     1268/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1270/  1 | btdrv_SendData
+01 02 fc 0a 84 20 00 e0 20 04 79 05 03 00 
+     1271/36E | tx
+     1271/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1273/  1 | btdrv_SendData
+01 02 fc 0a 80 01 00 c0 20 04 db f1 00 bd 
+     1277/36E | tx
+     1278/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1279/  1 | btdrv_SendData
+01 02 fc 16 0c 6f 00 c0 20 10 f9 f5 4a fe 00 23 00 bf 84 f8 c8 30 24 f6 f8 ba 
+[15:11:33.861]      1284/36E | tx
+     1284/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1286/  1 | btdrv_SendData
+01 02 fc 0a 88 20 00 e0 20 04 09 b5 02 00 
+     1287/36E | tx
+     1287/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1289/  1 | btdrv_SendData
+01 02 fc 0a 84 01 00 c0 20 04 da f1 2e bb 
+[15:11:33.870]      1294/36E | tx
+     1294/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1296/  1 | btdrv_SendData
+01 02 fc 2e 20 6f 00 c0 20 28 30 b4 00 23 03 21 07 4d da b2 90 42 04 d0 55 f8 23 40 00 2c 18 bf 11 46 01 33 03 2b f4 d1 08 46 30 bc 70 47 d4 09 00 c0 
+     1297/36E | tx
+     1297/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1299/  1 | btdrv_SendData
+01 02 fc 0a 8c 20 00 e0 20 04 c1 c8 02 00 
+[15:11:33.881]      1303/36E | tx
+     1303/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1305/  1 | btdrv_SendData
+01 02 fc 0a 88 01 00 c0 20 04 cb f1 d0 bc 
+     1310/36E | tx
+     1310/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1312/  1 | btdrv_SendData
+01 02 fc 1e 58 6f 00 c0 20 18 32 f6 38 fe 00 28 05 d0 02 20 00 bf 1c f6 b0 fc 34 f6 2f bb 34 f6 25 bb 
+     1316/36E | tx
+     1316/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1318/  1 | btdrv_SendData
+01 02 fc 0a 90 20 00 e0 20 04 b5 b5 03 00 
+     1319/36E | tx
+     1319/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1321/  1 | btdrv_SendData
+01 02 fc 0a 8c 01 00 c0 20 04 ee f1 7e bb 
+     1322/36E | tx
+     1323/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1324/  1 | btdrv_SendData
+01 02 fc 2a 70 6f 00 c0 20 24 32 f6 92 fd 01 28 09 d1 32 f6 28 fe 00 28 05 d0 32 f6 9c fd a0 42 01 d1 11 f6 77 bc 20 46 29 68 11 f6 70 bc 
+     1329/36E | tx
+     1329/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1331/  1 | btdrv_SendData
+01 02 fc 0a 94 20 00 e0 20 04 71 88 01 00 
+     1332/36E | tx
+     1332/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1334/  1 | btdrv_SendData
+01 02 fc 0a 90 01 00 c0 20 04 e5 f1 92 bc 
+     1339/36E | tx
+     1339/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1341/  1 | btdrv_SendData
+01 02 fc 7e c0 6f 00 c0 20 78 38 b5 0d 46 14 46 03 78 5b 08 42 78 c1 78 7f 2b 0a d1 01 2a 1e d1 0d 29 1c d1 32 f6 45 fd 01 46 00 20 34 f6 1f ff 15 e0 03 2b 13 d1 18 2a 11 d1 02 2d 0f d8 28 46 10 f6 b3 fc 58 b1 90 f8 47 30 02 2b 07 d1 28 46 2a f6 0b fc 28*     1342/36E | tx
+     1342/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1344/  1 | btdrv_SendData
+01 02 fc 0a 98 20 00 e0 20 04 f9 16 02 00 
+     1345/36E | tx
+     1345/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1347/  1 | btdrv_SendData
+01 02 fc 0a 94 01 00 c0 20 04 d9 f1 60 bf 
+     1348/36E | tx
+     1348/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1350/  1 | btdrv_SendData
+01 02 fc 86 50 70 00 c0 20 80 2d e9 f0 47 82 b0 97 4b 1e 5c 6e 23 03 fb 00 f3 95 4a 9b 5a 13 f4 00 4f 40 f0 20 81 89 46 04 46 4f ea 00 18 91 4f 08 eb 07 05 91 4b 53 f8 20 a0 90 4a 52 f8 20 30 01 33 42 f8 20 30 35 f6 60 f8 01 46 a0 42 40 f0 88 80 8a 4b 53*     1351/36E | tx
+     1351/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1353/  1 | btdrv_SendData
+01 02 fc 86 d0 70 00 c0 20 80 93 42 40 f2 eb 80 7f 4b 93 f9 00 30 c3 b9 7e 4b 93 f8 00 c0 bc f1 00 0f 0a d0 2a 46 05 eb 0c 0e 00 23 12 f9 01 0b 03 44 72 45 fa d1 62 46 01 e0 00 22 13 46 93 fb fc fc 72 48 80 f8 00 c0 01 e0 00 22 13 46 6f 48 90 f8 00 e0 70*     1358/36E | tx
+     1358/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1360/  1 | btdrv_SendData
+01 02 fc 86 50 71 00 c0 20 80 24 e0 df f8 78 e1 5e f8 24 00 01 30 4e f8 24 00 5d 48 00 78 86 42 05 d2 5a 4f 3f 78 af 55 01 36 f6 b2 04 e0 57 4e 36 78 08 f8 07 60 01 26 4d 4f 3e 55 82 42 06 da 2a 44 05 44 12 f9 01 4b 23 44 aa 42 fa d1 53 4a 93 fb f0 f0 00*     1361/36E | tx
+     1361/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1363/  1 | btdrv_SendData
+01 02 fc 86 d0 71 00 c0 20 80 5b 42 3e 4a 52 f8 24 10 44 4a 12 68 02 fb 01 f2 93 42 63 d9 42 4b 93 f9 00 30 c3 b9 3a 4b 93 f8 00 e0 be f1 00 0f 0a d0 2a 46 05 eb 0e 00 00 23 12 f9 01 1b 0b 44 82 42 fa d1 72 46 01 e0 00 22 13 46 93 fb fe fe 36 49 81 f8 00*     1368/36E | tx
+     1368/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1370/  1 | btdrv_SendData
+01 02 fc 86 50 72 00 c0 20 80 00 20 1c 49 41 f8 24 00 1c 48 50 f8 24 10 01 31 40 f8 24 10 1c 49 08 78 86 42 05 d2 20 49 09 78 a9 55 01 36 f6 b2 04 e0 1d 49 09 78 08 f8 07 10 01 26 0c 49 0e 55 82 42 06 da 2a 44 05 44 12 f9 01 1b 0b 44 aa 42 fa d1 12 4a 93*     1371/36E | tx
+     1371/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1373/  1 | btdrv_SendData
+01 02 fc 62 d0 72 00 c0 20 5c 00 73 00 c0 60 6b 00 c0 f4 6a 00 c0 04 73 00 c0 08 73 00 c0 68 42 00 c0 0c 73 00 c0 10 73 00 c0 88 6b 00 c0 14 73 00 c0 18 73 00 c0 ff ff ff ff 38 00 00 00 14 00 00 00 9c 00 00 00 ff ff ff ff 38 00 00 00 14 00 00 00 a1 00 00*     1374/36E | tx
+     1374/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1376/  1 | btdrv_SendData
+01 02 fc 0a 9c 20 00 e0 20 04 59 d4 02 00 
+     1377/36E | tx
+     1377/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1379/  1 | btdrv_SendData
+01 02 fc 0a 98 01 00 c0 20 04 01 e0 00 bf 
+[15:11:33.961]      1384/36E | tx
+     1384/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1386/  1 | btdrv_SendData
+01 02 fc 0a a0 20 00 e0 20 04 cd 9e 03 00 
+     1387/36E | tx
+     1387/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1389/  1 | btdrv_SendData
+01 02 fc 0a 9c 01 00 c0 20 04 f4 f1 40 b9 
+     1390/36E | tx
+     1390/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1392/  1 | btdrv_SendData
+01 02 fc 26 2c 73 00 c0 20 20 05 4b 1b 68 00 2b 03 d1 12 9b 1a 78 0b f6 b8 be 0b f6 c3 be 00 bf 00 bf 48 73 00 c0 00 00 00 00 
+     1396/36E | tx
+     1396/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1398/  1 | btdrv_SendData
+01 02 fc 0a a4 20 00 e0 20 04 a9 30 01 00 
+[15:11:33.982]      1403/36E | tx
+     1403/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1405/  1 | btdrv_SendData
+01 02 fc 0a a0 01 00 c0 20 04 eb f1 1e ba 
+     1409/36E | tx
+     1409/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1411/  1 | btdrv_SendData
+01 02 fc 86 50 73 00 c0 20 80 32 f6 a2 fb 01 28 1d d1 32 f6 38 fc d0 b1 33 4b 1b 68 00 2b 13 d0 32 f6 a9 fb 06 46 b8 42 0e d1 32 f6 98 fb 00 28 5f d1 32 f6 76 fb 05 46 22 7a 63 7a 93 42 03 d1 20 46 00 f0 9a f9 d0 b9 00 20 14 f6 ef bd 32 f6 80 fb 02 28 0d*     1416/36E | tx
+     1416/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1418/  1 | btdrv_SendData
+01 02 fc 86 d0 73 00 c0 20 80 fc f5 44 f8 e3 79 42 7c 9a 42 02 d8 fc f5 3e f8 43 7c 85 f8 56 30 63 79 85 f8 57 30 23 79 c3 f3 40 03 85 f8 58 30 23 7a 85 f8 59 30 63 89 a5 f8 5a 30 a3 7b 85 f8 5c 30 e3 78 85 f8 5d 30 a3 78 85 f8 5f 30 32 f6 28 fb 03 46 38*     1419/36E | tx
+     1419/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1421/  1 | btdrv_SendData
+01 02 fc 16 50 74 00 c0 20 10 ff 0c 26 3c ff 12 37 5a ff ff ff ff ff ff ff ff 
+     1426/36E | tx
+     1426/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1428/  1 | btdrv_SendData
+01 02 fc 0a a8 20 00 e0 20 04 11 bf 01 00 
+     1429/36E | tx
+     1429/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1431/  1 | btdrv_SendData
+01 02 fc 0a a4 01 00 c0 20 04 01 e0 1b fb 
+     1432/36E | tx
+     1432/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1434/  1 | btdrv_SendData
+01 02 fc 0a ac 20 00 e0 20 04 19 b8 03 00 
+     1435/36E | tx
+     1435/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1437/  1 | btdrv_SendData
+01 02 fc 0a a8 01 00 c0 20 04 0f 0f 0b e0 
+     1438/36E | tx
+     1438/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1440/  1 | btdrv_SendData
+01 02 fc 0a b0 20 00 e0 20 04 b5 ce 02 00 
+[15:11:34.021]      1445/36E | tx
+     1445/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1447/  1 | btdrv_SendData
+01 02 fc 0a ac 01 00 c0 20 04 43 f4 00 33 
+     1448/36E | tx
+     1448/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1450/  1 | btdrv_SendData
+01 02 fc 0a b4 20 00 e0 20 04 1d a5 02 00 
+[15:11:34.031]      1454/36E | tx
+     1454/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1456/  1 | btdrv_SendData
+01 02 fc 0a b0 01 00 c0 20 04 e0 f1 f8 b9 
+     1457/36E | tx
+     1457/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1459/  1 | btdrv_SendData
+01 02 fc 86 60 74 00 c0 20 80 6b 68 00 bf b3 42 0f d0 00 21 21 4a 04 e0 63 68 29 46 b3 42 0a d0 25 46 93 42 26 d9 01 2e 24 d8 1e 46 2c 46 0d 46 01 e0 2c 46 00 25 d4 f8 08 80 94 f8 0c a0 94 f8 0d 90 16 4f 38 46 29 46 22 46 fc f5 12 fb a7 f1 14 00 21 46 fc*     1464/36E | tx
+     1464/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1466/  1 | btdrv_SendData
+01 02 fc 22 e0 74 00 c0 20 1c f0 87 00 bf 54 09 00 c0 bc 00 22 d0 ec 08 05 a0 fc ff ff 07 68 09 00 c0 b4 08 05 a0 
+     1467/36E | tx
+     1467/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1469/  1 | btdrv_SendData
+01 02 fc 0a b8 20 00 e0 20 04 6d 70 02 00 
+     1470/36E | tx
+     1470/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1472/  1 | btdrv_SendData
+01 02 fc 0a b4 01 00 c0 20 04 00 f2 0a b8 
+     1476/36E | tx
+     1476/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1478/  1 | btdrv_SendData
+01 02 fc 36 88 76 00 c0 20 30 08 b5 05 4b 1b 68 01 2b 04 d1 00 22 02 4b 1a 60 33 f6 6c fe 08 bd 00 bf a4 76 00 c0 00 00 00 00 ff f7 ee ff 04 2b 01 d1 ff f5 f0 bf ff f5 f5 bf 
+[15:11:34.062]      1483/36E | tx
+     1483/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1485/  1 | btdrv_SendData
+01 02 fc 0a bc 20 00 e0 20 04 91 76 00 00 
+     1489/36E | tx
+     1490/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1491/  1 | btdrv_SendData
+01 02 fc 0a b8 01 00 c0 20 04 cb f1 70 bb 
+     1492/36E | tx
+     1493/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1495/  1 | btdrv_SendData
+01 02 fc 36 d0 6c 00 c0 20 30 08 b5 06 4b 98 7a 00 02 40 f0 01 00 fa f5 70 fb 01 38 18 bf 4f f0 ff 30 08 bd 00 bf d0 64 00 c0 ff f7 ee ff 18 b9 1b 78 02 2b 34 f6 89 bc 08 bd 
+     1495/36E | tx
+     1496/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1498/  1 | btdrv_SendData
+01 02 fc 0a c0 20 00 e0 20 04 0d b6 03 00 
+[15:11:34.083]      1502/36E | tx
+     1502/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1504/  1 | btdrv_SendData
+01 02 fc 0a bc 01 00 c0 20 04 ea f1 98 bc 
+     1509/36E | tx
+     1509/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1511/  1 | btdrv_SendData
+01 02 fc 1e 5c 6e 00 c0 20 18 04 4b 0b b1 15 f6 84 bb 00 23 3b 78 03 f0 01 03 15 f6 5e bb 00 00 00 00 
+     1515/36E | tx
+     1515/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1517/  1 | btdrv_SendData
+01 02 fc 0a c4 20 00 e0 20 04 29 c5 01 00 
+     1518/36E | tx
+     1518/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1520/  1 | btdrv_SendData
+01 02 fc 0a c0 01 00 c0 20 04 06 f2 f2 b8 
+[15:11:34.104]      1525/36E | tx
+     1525/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1527/  1 | btdrv_SendData
+01 02 fc 86 18 75 00 c0 20 80 1d 4b 1b 68 00 2b 35 d1 30 b5 83 b0 ef f3 10 83 13 f0 01 0f 17 d1 72 b6 18 4c 00 25 00 95 01 95 20 46 04 f1 3c 01 08 22 07 23 fc f5 ed f9 00 95 01 95 04 f5 80 70 04 f5 8a 71 08 22 07 23 fc f5 e3 f9 62 b6 14 e0 0d 4c 00 25 00*     1528/36E | tx
+     1528/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1530/  1 | btdrv_SendData
+01 02 fc 12 98 75 00 c0 20 0c ff f7 be ff 04 b0 bd e8 f0 81 00 bf 
+     1531/36E | tx
+     1531/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1533/  1 | btdrv_SendData
+01 02 fc 0a c8 20 00 e0 20 04 b1 13 00 00 
+     1538/36E | tx
+     1538/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1540/  1 | btdrv_SendData
+01 02 fc 0a c4 01 00 c0 20 04 f6 f1 de bd 
+     1544/36E | tx
+     1544/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1546/  1 | btdrv_SendData
+01 02 fc 1e 98 6f 00 c0 20 18 04 48 00 78 20 b1 00 bf 32 f6 8c fd 09 f6 1a ba 09 f6 1a ba 21 62 00 c0 
+     1547/36E | tx
+     1547/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1549/  1 | btdrv_SendData
+01 02 fc 0a cc 20 00 e0 20 04 d9 03 01 00 
+[15:11:34.133]      1554/36E | tx
+     1554/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1556/  1 | btdrv_SendData
+01 02 fc 0a c8 01 00 c0 20 04 cd f1 0a bc 
+     1557/36E | tx
+     1557/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1559/  1 | btdrv_SendData
+01 02 fc 1a b0 75 00 c0 20 14 06 d8 32 f6 0b fb 01 28 02 d0 09 02 32 f6 ee bb 08 bd 00 bf 
+     1560/36E | tx
+     1560/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1562/  1 | btdrv_SendData
+01 02 fc 0a d0 20 00 e0 20 04 99 9d 03 00 
+     1563/36E | tx
+     1563/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1565/  1 | btdrv_SendData
+01 02 fc 0a cc 01 00 c0 20 04 bd e8 f8 8f 
+     1566/36E | tx
+     1566/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1568/  1 | btdrv_SendData
+01 02 fc 0a d4 20 00 e0 20 04 01 ea 02 00 
+     1569/36E | tx
+     1569/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1571/  1 | btdrv_SendData
+01 02 fc 0a d0 01 00 c0 20 04 eb f1 be bb 
+     1572/36E | tx
+     1572/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1574/  1 | btdrv_SendData
+01 02 fc 86 dc 75 00 c0 20 80 f8 b5 05 46 19 4c 54 f8 20 70 32 f6 05 fb 06 46 54 f8 20 40 32 f6 ec fa 20 b3 32 f6 61 fa a8 42 20 d1 97 f8 47 30 02 2b 1c d1 02 2e 1a d8 cc b1 94 f8 47 30 02 2b 15 d1 94 f8 40 30 73 b9 34 02 44 f0 01 04 a4 b2 20 46 f9 f5 cc*     1579/36E | tx
+     1579/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1581/  1 | btdrv_SendData
+01 02 fc 16 5c 76 00 c0 20 10 f9 f5 b0 fe 14 f6 38 fc 14 f6 84 bc 00 00 00 00 
+     1582/36E | tx
+     1582/38E | btdrv_rx len:7
+[15:11:34.162] 04 0e 04 05 02 fc 00 
+     1584/  1 | btdrv_SendData
+01 02 fc 0a d8 20 00 e0 20 04 d1 be 01 00 
+     1585/36E | tx
+     1585/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1587/  1 | btdrv_SendData
+01 02 fc 0a d4 01 00 c0 20 04 cd f1 38 bb 
+     1591/36E | tx
+     1591/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+[15:11:34.173]      1593/  1 | btdrv_SendData
+01 02 fc 1a fc 76 00 c0 20 14 03 4b 1b 68 01 2b 01 d1 32 f6 06 fb bd e8 f0 81 34 74 00 c0 
+     1594/36E | tx
+     1595/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1596/  1 | btdrv_SendData
+01 02 fc 0a dc 20 00 e0 20 04 89 a0 03 00 
+     1601/36E | tx
+     1601/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+[15:11:34.185]      1603/  1 | btdrv_SendData
+01 02 fc 0a d8 01 00 c0 20 04 ee f1 54 bf 
+     1608/36E | tx
+     1608/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1610/  1 | btdrv_SendData
+01 02 fc 16 70 76 00 c0 20 10 28 0a 00 bf 26 f6 c6 ff 28 0a 21 0a 11 f6 a4 b8 
+     1614/36E | tx
+     1614/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1616/  1 | btdrv_SendData
+01 02 fc 0a e0 20 00 e0 20 04 c5 87 01 00 
+     1617/36E | tx
+     1617/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1619/  1 | btdrv_SendData
+01 02 fc 0a dc 01 00 c0 20 04 3a e0 00 bf 
+     1620/36E | tx
+     1620/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1622/  1 | btdrv_SendData
+01 02 fc 0a e4 20 00 e0 20 04 59 07 03 00 
+     1623/36E | tx
+     1623/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1625/  1 | btdrv_SendData
+01 02 fc 0e 00 20 00 e0 20 08 03 2f 00 00 00 01 00 20 
+     1626/36E | tx
+     1626/38E | btdrv_rx len:7
+04 0e 04 05 02 fc 00 
+     1628/  1 | btdrv_config_init
+     1628/  1 | btdrv_SendData
+01 81 fc 08 bf ee cd fa db bd 7b 87 
+     1633/36E | tx
+     1633/38E | btdrv_rx len:7
+04 0e 04 05 81 fc 00 
+     1634/  1 | btdrv_SendData
+01 86 fc 68 00 01 01 00 01 c8 00 20 03 40 06 3a 00 01 00 ff 04 17 11 00 00 01 04 01 04 00 01 00 00 00 00 08 03 50 78 01 01 3a 5e 09 03 00 21 00 01 00 00 3f 2b 00 07 00 20 03 05 00 0c 01 00 32 00 48 00 06 01 00 01 01 01 00 00 00 00 00 00 00 00 00 00 00 00*     1636/36E | tx
+     1636/38E | btdrv_rx len:7
+04 0e 04 05 86 fc 00 
+     1637/  1 | btdrv_SendData
+01 ae fc 19 00 01 32 00 00 12 01 00 08 00 0a 98 0a 00 00 01 00 00 c8 00 50 a6 64 00 01 
+     1643/36E | tx
+     1643/38E | btdrv_rx len:7
+04 0e 04 05 ae fc 00 
+     1644/  1 | btdrv_SendData
+01 77 fc 08 01 00 c8 00 32 00 00 00 
+     1650/36E | tx
+     1650/38E | btdrv_rx len:7
+04 0e 04 05 77 fc 00 
+     1651/  1 | btdrv_SendData
+01 88 fc bd 01 00 01 b9 02 00 a6 ba 0f 02 0e 00 e8 03 01 ff ff 7f 7f 01 01 00 01 00 eb e5 e7 ee e8 ed f1 eb f3 f4 ee fa f7 f1 00 fa f4 7f fd f7 7f 00 fa 7f 7f fd 7f 7f 00 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 7f 32 00 b0 2b 00 b0 25 00 b0 1f 00 b0*     1653/36E | tx
+     1653/38E | btdrv_rx len:7
+04 0e 04 05 88 fc 00 
+     1654/  1 | btdrv_SendData
+01 8f fc 04 01 01 00 00 
+     1656/36E | tx
+     1656/38E | btdrv_rx len:7
+04 0e 04 05 8f fc 00 
+     1657/  1 | btdrv_SendData
+01 74 fc 08 20 00 00 00 70 51 00 00 
+     1663/36E | tx
+     1663/38E | btdrv_rx len:7
+04 0e 04 05 74 fc 00 
+     1664/  1 | btdrv_SendData
+01 76 fc 03 ff fe 9c 
+     1669/36E | tx
+     1669/38E | btdrv_rx len:7
+04 0e 04 05 76 fc 00 
+     1670/  1 | btdrv_SendData
+01 82 fc 09 02 1f 03 00 00 00 00 00 00 
+     1672/36E | tx
+     1672/38E | btdrv_rx len:7
+04 0e 04 05 82 fc 00 
+[15:11:34.257]      1683/  1 | bt_drv_config_lmp_filter_table: 0xc0006e40, 0xc0006c9c
+     1683/  1 | BT_DRV:set fa invert en=1
+     1684/  1 | btdrv_rf_log_delay_cal
+
+     1684/  1 | 0x42 read=6c09
+
+     1684/  1 | 0x42 write=6de9
+
+     1685/  1 | 0xb4 read=9c2f
+
+     1685/  1 | 0xb4[11:6] 0032
+
+     1685/  1 | 0xb4[11:6] reorder 0032
+
+     1686/  1 | 0xb4[5:0] 0031
+
+     1686/  1 | 0xb4[5:0] reorder 0031
+
+     1686/  1 | 0x43 write=f2c7
+
+     1687/  1 | 0x42 write=6c09
+
+     1688/  1 | btdrv_rf_init_ext xtal_fcap=0x100
+[15:11:34.292]      1719/  1 | btdrv_rccal 0xb0 value:1825
+
+     1719/  1 | 0x8b val_tmp1=2a01
+
+     1719/  1 | 0x8d val_tmp2=a275
+
+     1719/  1 | 0xb0 0x200 < value < 0xff0 done 
+
+     1719/  1 | 0x03:8a001
+
+     1719/  1 | chk 0x03 val_tmp1=2281
+
+     1720/  1 | 0x05:9a75
+
+     1720/  1 | chk 0x05 val_tmp2=0
+
+[15:11:34.312]      1741/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1743/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1745/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1747/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1749/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1751/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1753/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1755/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1757/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1759/  1 | btdrv_hwagc_1400_dccal first_val = 0x3
+
+     1762/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+[15:11:34.342]      1764/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1766/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1768/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1770/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1772/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+[15:11:34.352]      1774/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1776/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1778/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1780/  1 | btdrv_hwagc_1400_dccal value = 0x3
+
+     1781/  1 | btdrv_hwagc_1400_dccal dc_cal_counter = 0, average value_after = 3
+
+     1782/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+[15:11:34.362]      1784/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1786/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1789/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1791/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1793/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1795/  1 | btdrv_hwagc_1400_dccal first_val = 0x7
+
+     1797/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1799/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1801/  1 | btdrv_hwagc_1400_dccal first_val = 0x8
+
+     1803/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1805/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1807/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1809/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1811/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1813/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1815/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1817/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1819/  1 | btdrv_hwagc_1400_dccal value = 0x7
+
+     1822/  1 | btdrv_hwagc_1400_dccal value = 0x8
+
+     1823/  1 | btdrv_hwagc_1400_dccal dc_cal_counter = 1, average value_after = 7
+
+     1824/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1826/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1828/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1830/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1832/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1834/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1836/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1838/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1840/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1842/  1 | btdrv_hwagc_1400_dccal first_val = 0x1
+
+     1844/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1846/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1848/  1 | btdrv_hwagc_1400_dccal value = 0x2
+
+     1851/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1853/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1855/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1857/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1859/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1861/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1863/  1 | btdrv_hwagc_1400_dccal value = 0x1
+
+     1864/  1 | btdrv_hwagc_1400_dccal dc_cal_counter = 2, average value_after = 1
+
+[15:11:34.452]      1875/  1 | bt_iqimb_ini :
+     1881/  1 | syspool_init: 0x20020048,0x19654
+     1882/  1 | [syspool_get_buff] size = 10240 , free size = 104020
+     1882/  1 | [med_heap_add_block] g_block_index = 0, begin_addr = 0x20020048, size = 10240
+     1882/  1 | multi_heap_register_impl start=0x20020048,size=10240
+     1882/  1 | malloc ini
+     1883/  1 | st:2002006c, st->M0data:20020080, st->Table0:20020484, st->Table1:20020c88, st->Table2:2002148c
+     1883/  1 | malloc ok
+     1883/  1 | Tblgen ini
+[15:11:34.478]      1908/  1 | Tblgen ok
+[15:11:34.527]      1957/  1 | dc cal done!!!	 dc_i = -4 ,dc_q = -4,Energy1 = 961
+[15:11:34.621]      2052/  1 | IQ phase correct addr = 0xd03100ac,phase_mis = -44 ,gain_mis = 8,Energy = 1450
+     2052/  1 | use time: 2828 ticks
+[15:11:34.642]      2063/  1 | bt_drv_reg_dgb_link_gain_ctrl_init REG_OP: not support
+     2064/  5 | intersys_tx_thread_id 20004d28
+
+     2064/  5 | intersys_rx_thread_id 2000575c
+
+     2064/  5 | bt_if LIB_INFO=ce79f7ff8f-dirty
+     2065/  5 | bt_profiles LIB_INFO=ce79f7ff8f-dirty
+     2065/  5 | :_sdp_add_to_ctl_list:list 200049e0, node 2000b61c
+     2066/  5 | :_sdp_add_to_ctl_list:list 200049e0, node 2000bb9c
+     2066/  5 | :_sdp_add_to_ctl_list:list 200049e0, node 2000c11c
+     2066/  5 | :_sdp_add_to_ctl_list:list 200049e0, node 2000c69c
+     2066/  5 | btif_cmgr_handler_init:node 0x2000b4fc, next 0x2000b4fc
+     2066/  5 | btif_me_register_global_handler 1076
+     2066/  5 | btif_me_event_manager_init 109
+     2067/  5 | l2cap register avctp ok
+     2067/  5 | sdp_server_add_global_record:add node 0x2000d15c to list, record 0x2000d15c, handle 0x10000
+     2067/  5 | sdp_server_add_global_record:add node 0x2000d144 to list, record 0x2000d144, handle 0x10001
+     2067/  5 | :_add_to_ctl_list:list 200048e0, node 2000b184
+     2067/  5 | btif_avrcp_init 812 st:0
+     2067/  5 | btif_a2dp_init 902
+     2067/  5 | sdp_server_add_global_record:add node 0x2000d0b8 to list, record 0x2000d0b8, handle 0x10002
+     2067/  5 | btif_a2dp_alloc_stream 920
+     2067/  5 | btif_a2dp_alloc_stream  stream: 0x2000ae00, ->a2dp_stream 0x2000ac74
+     2068/  5 | btif_a2dp_alloc_stream 920
+     2068/  5 | btif_a2dp_alloc_stream  stream: 0x2000ae08, ->a2dp_stream 0x2000ad34
+     2068/  5 | sdp_server_add_global_record:add node 0x2000db10 to list, record 0x2000db10, handle 0x10003
+     2068/  5 | #### btif_hf_create_channel max channel 1, current 0
+
+     2068/  5 | #### hf_open_chan chan 0x2000cc20
+
+     2068/  5 | hf_open_chan:chan=0x2000cc20,tx_timeout_timer=1
+     2068/  5 | app_hfp_mute_upstream devId 0 isMute 1
+     2068/  5 | btif_a2dp_register 842 codec type:0
+     2068/  5 | _sbrk: incr 40 cur=0x2001f068
+
+     2069/  5 | a2dp_register 2320 stream:0x2000ac74
+     2069/  5 | a2dp_register,a2dp_ctl=2000ac74,codec type=0,seid=1
+     2069/  5 | btif_a2dp_register 842 codec type:2
+     2069/  5 | _sbrk: incr 40 cur=0x2001f090
+
+     2069/  5 | a2dp_register 2320 stream:0x2000ad34
+     2069/  5 | a2dp_register,a2dp_ctl=2000ad34,codec type=2,seid=2
+     2069/  5 | a2dp_register 2400 a2dp_ctl:0x2000ad34
+     2070/  5 | tx process:0,1,1,1
+     2070/  1 | BesbtThread: 20004d28
+
+[15:11:35.103]      2527/  5 | Read ACL buf num=5
+     2534/  5 | btm_process_cmd_complete_read_local_version:status 0
+     2534/  5 | btm_process_cmd_complete_read_local_version:hci version 9
+     2534/  5 | btm_process_cmd_complete_read_local_version:lmp version 9
+     2534/  5 | btm_process_cmd_complete_read_local_version:lmp subversion 801
+     2534/  5 | btm_process_cmd_complete_read_local_version:btm get bt version 9
+     2536/  5 | btm_process_cmd_complete_read_local_ext_features:btm get status 0 page num 0 ext features:
+0xbf 0xee 0xcd 0xfa 0xdb 0xbd 0x7b 0x87 
+     2537/  5 | btm_process_cmd_complete_read_local_ext_features:btm get status 0 page num 1 ext features:
+0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 
+     2538/  5 | btm_process_cmd_complete_read_local_ext_features:btm get status 0 page num 2 ext features:
+0x1f 0x3 0x0 0x0 0x0 0x0 0x0 0x0 
+[15:11:35.121]      2549/  5 | nvrec_dev_localname_addr_init: nv dev data valid
+     2549/  5 | BT addr is:
+12 34 33 22 11 11 
+     2549/  5 | BLE addr is:
+fa 9b c2 56 34 12 
+     2549/  5 | localname=zwp_bt, namelen=6
+     2549/  5 | blename=test, namelen=4
+     2549/  5 | bt_stack_config
+     2550/  5 | btif_me_set_inquiry_mode:mode=0x2
+     2550/  5 | app_notify_stack_ready 0 1
+     2550/  5 | btm_chip_init : stack_ready!
+     2550/  1 | app_wait_stack_ready: wait:480 ms
+     2550/  1 | stack init done
+     2552/  5 | [BT_FUNC] src_thread:0x200057c4 call BT_Custom_Func
+     2552/  5 | btif_me_register_global_handler 1076
+     2553/  5 | tws_ibrt LIB_INFO=ce79f7ff8f-dirty
+     2553/  5 | Besaud_Register chnl=0x2000cdb8
+
+     2554/  5 | app_tws_ibrt_audio_sync_pid_setup mode:1
+     2554/  5 | a2dp_audio_sync_handler reset
+     2554/  5 | audio_sync tune reset_data
+     2555/  5 | enable ibrt_auto_accept_sco
+     2555/  5 | app_ibrt_ui_test_init
+     2555/  5 | ibrt_ui_log:sniff_checker_init interval:3000 
+
+     2557/  5 | this is ibrt 255
+     2558/  5 | local_addr
+00 00 00 00 00 00 
+     2558/  5 | peer_addr
+00 00 00 00 00 4d 
+     2559/  5 | audio_chnl_sel 1
+     2559/  5 | [BT_FUNC] exit request_id:24 :status:25
+     2561/  5 | [BT_FUNC] src_thread:0x20004d28 call ME_SetConnectionRole
+     2561/  5 | [BT_FUNC] exit request_id:2 :status:0
+     2562/  5 | [BT_FUNC] src_thread:0x20004d28 call A2DP_SetMasterRole
+     2562/  5 | [BT_FUNC] exit request_id:11 :status:1
+     2564/  5 | [BT_FUNC] src_thread:0x20004d28 call A2DP_SetMasterRole
+     2564/  5 | [BT_FUNC] exit request_id:11 :status:1
+     2565/  5 | [BT_FUNC] src_thread:0x20004d28 call HF_SetMasterRole
+     2565/  5 | [BT_FUNC] exit request_id:17 :status:1
+[15:11:35.142]      2566/  5 | [BT_FUNC] src_thread:0x20004d28 call CMGR_SetSniffInofToAllHandlerByRemDev
+     2566/  5 | [BT_FUNC] exit request_id:8 :status:14
+     2567/  5 | [BT_FUNC] src_thread:0x20004d28 call HF_EnableSniffMode
+     2567/  5 | btm_conn_search_linkup:ca=0xc02bfb3,bdaddr is ALLZERO!
+     2567/  5 | btif_me_stop_sniff no remote device
+     2567/  5 | [BT_FUNC] exit request_id:16 :status:1
+     2565/  1 | 
+
+
+bt_stack_init_done:9
+
+
+
+     2574/  1 | app_status_indication_execute 0
+     2574/  1 | app_voice_report_handler 0
+     2574/  3 | audio manager handler id 0[APP_BT_STREAM_MANAGER_START] stream type 0x2[MEDIA]
+     2574/  3 | STREAM MANAGE bt_media_start type= 0x2[MEDIA],device id = 0x0,media_id = 0xe000
+     2575/  3 | bt_media_start media_active = 0x2[MEDIA]
+     2575/  3 | bt_media_start curr_active_media = 0x0[]
+D/BT MAN bt_media_start()- 0509:isMergingPrompt 1 
+     2575/  3 | curr_active_media is set to 0x2[MEDIA]
+     2575/  3 | =======>APP_BT_SETTING_OPEN,##before>>>>status_id: 128, aud_id: 57344, len = 0
+     2575/  3 | app_audio_list_append 0x2001ab3c,ID = 128, status = 0
+     2576/  3 | app_audio_list_append Updated audio list len = 1
+     2576/  3 | app_bt_stream_trigger_checker_init
+
+     2576/  3 | app_bt_stream_open prev:0[] freq:0
+     2576/  3 | app_bt_stream_open cur:128[BACK_AUDIO] freq:0
+     2576/  3 | app_play_audio_onoff work:0 op:1
+     2576/  3 | app_play_audio_onoff on aud_id:0 chnlsel:24576
+     2577/  3 | app_overlay_select id:1:8
+[15:11:35.162]      2586/  3 | syspool_init_specific_size: 0x20020048,0x14000
+     2587/  3 | [syspool_get_buff] size = 32 , free size = 81920
+     2587/  3 | [syspool_get_buff] size = 1024 , free size = 81888
+     2587/  3 | [syspool_get_buff] size = 3004 , free size = 80864
+     2587/  3 | [syspool_get_buff] size = 1024 , free size = 77860
+     2588/  3 | [syspool_get_buff] size = 4096 , free size = 76836
+     2588/  3 | [af_stream_open] id = 0, stream = 0
+     2588/  3 | codec_int_open: running=0
+     2588/  3 | trig codec open
+     2588/  3 | codec_hw_open
+     2589/  3 | codec_int_stream_open: stream=0
+     2589/  3 | codec_int_stream_setup: stream=0
+     2589/  3 | [sample_rate]old=0 new=16000
+     2589/  3 | [bits]old=0 new=16
+     2589/  3 | [channel_num]old=0 new=2
+     2589/  3 | [channel_map]old=0x0 new=0x1
+     2589/  3 | [use_dma]old=0 new=1
+     2590/  3 | [io_path]old=0 new=7
+     2590/  3 | [codec_int_stream_setup]stream=0 set_flag=0xff
+     2590/  3 | 
+!!! WARNING:hal_codec_setup_stream: Bad play stereo ch map: 0x1
+
+     2590/  3 | [hal_codec_setup_stream] playback sample_rate=16000
+     2591/  3 | codec_int_stream_start: stream=0
+     2591/  3 | codec_hw_start: stream=0
+     2591/  1 | hello world i'm bes1000 hahaha case:0
+
+     2592/  5 | [BT_FUNC] src_thread:0x200057c4 call BT_Custom_Func
+     2592/  5 | [BT_FUNC] exit request_id:24 :status:25
+     2594/  1 | The Side is unknown_side ++++++++++
+
+
+     2594/  1 | factory_section_get_bt_address++++
+
+
+     2594/  3 | gStreamplayer is updated to 0x80
+     2595/  3 | =======>APP_BT_SETTING_OPEN, ##after: status_id: 128, len = 1
+     2595/  3 | mod_handler[1] ret=-1
+     2594/  1 | The factory_section_get_bt_address is 11 11 22 33 34 12
+     2595/  1 | Right earbud+++++
+
+[15:11:35.362]      2795/11E | hal_gpadc_adc2volt_calib efuse:414/544 LV=414, HV=544, Slope:1923 Intcpt:3
+     2796/  2 | app_battery_timer_handler 1
+     2796/  2 | cosonic: currvolt:3796
+[15:11:35.560]      2995/  2 | app_battery_timer_handler 1
+     2995/  2 | cosonic: currvolt:3796
+[15:11:35.761]      3195/  2 | app_battery_timer_handler 1
+     3195/  2 | cosonic: currvolt:3788
+[15:11:35.961]      3395/  2 | app_battery_timer_handler 1
+     3395/  2 | cosonic: currvolt:3788
+[15:11:36.161]      3595/  2 | app_battery_timer_handler 1
+     3595/  2 | cosonic: currvolt:3796
+[15:11:36.363]      3795/  2 | app_battery_timer_handler 1
+     3795/  2 | cosonic: currvolt:3796
+     3796/  3 | checker: IBRT_UNKNOW activeCons:0 curRole:255 nvRole:255
+     3796/  3 | checker: nv_role:255 current_role:255 access_mode:0
+00 00 00 00 00 00 
+00 00 00 00 00 4d 
+     3796/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+     3796/  3 | checker: box_state:IN_BOX_OPEN/IN_BOX_CLOSED sm_run:0/0
+     3797/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+     3797/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+     3797/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+     3797/  3 | AFH 1:
+00 00 00 00 00 00 00 00 00 00 
+     3798/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+     3798/  3 | AFH EN:0 1 2 
+     3798/  3 | AFH ch num:0 0 0 
+     3798/  3 | clk off:0 0 0 
+     3798/  3 | bitoff:0 0 0 
+     3799/  3 | BT_REG_OP: LC_STATE=0x0
+     3799/  3 | app_battery_charger_handle_process currvolt:3791 chg:1
+[15:11:36.670]      4105/  4 | cache underflow
+     4105/  4 | media_sbc_decoder underflow len:1024
+ 
+     4105/  4 | [app_play_single_sbc_more_data]-->need close, length:16168 len:1024 l:768
+[15:11:36.680]      4116/11E | app_battery_charger_handler: status=1
+     4116/  3 | app_battery_pluginout_debounce_start
+[15:11:36.731]      4168/  3 | =======>APP_BT_SETTING_CLOSE, current id: 128
+     4168/  3 | app_bt_stream_close gStreamplayer: 0x80[BACK_AUDIO]
+     4168/  3 | app_bt_stream_close player:0x80[BACK_AUDIO]
+     4169/  3 | app_bt_stream_trigger_checker_deinit
+
+     4169/  3 | app_play_audio_onoff work:1 op:0
+     4171/  3 | codec_int_stream_stop: stream=0
+     4173/  3 | codec_hw_stop: stream=0
+     4178/  3 | codec_int_stream_close: stream=0
+     4178/  3 | codec_int_stream_restore_chan_vol: stream=0
+     4178/  3 | codec_int_close: type=0 running=1
+     4179/  3 | trig codec close
+     4179/  3 | codec_hw_close: type=0
+     4184/  3 | [app_ibrt_voice_report_set_trigger_time] trigger clear
+     4184/  3 | gStreamplayer is updated to 0x0[]
+     4184/  3 | =======>APP_BT_SETTING_CLOSE, list: 1
+     4185/  3 | =======>APP_BT_SETTING_CLOSE MEDIA
+     4185/  3 | bt_media_stop type= 0x2[MEDIA], device id = 0x0
+     4185/  3 | bt_media_stop media_active = 0x2[MEDIA]
+     4185/  3 | bt_media_stop curr_active_media = 0x2[MEDIA]
+     4186/  3 | curr_active_media is set to 0x0[]
+     4186/  3 | bt_media_stop end media_active = 0[]
+     4186/  3 | bt_media_stop end curr_active_media = 0[]
+     4187/  3 | pre audio list len 1 at line 671
+     4187/  3 | =======>app_audio_handle_free playback , aud_id: 57344, type = 23881
+     4187/  3 | ID = 128 Updated audio list len = 0
+     4187/  3 | mod_handler[1] ret=-1
+[15:11:36.783]      4217/  2 | app_battery_pluginout_debounce_handler PLUGOUT
+     4217/  2 | PLUGOUT123 
+     4218/11E | app_battery_charger_handler: status=1
+     4218/  3 | CHARGING:0/0
+     4219/  3 | app_battery_charger_handle_process currvolt:3791 chg:1
+     4219/  3 | charger:0
+     4219/  3 | APP_BATTERY_CHARGER_PLUGOUT nv_role ff
+     4219/  3 | app_battery_pluginout_debounce_start
+[15:11:36.882]      4320/  2 | app_battery_pluginout_debounce_handler PLUGOUT
+     4320/  2 | PLUGOUT123 
+     4321/  3 | CHARGING-->APP_BATTERY_CHARGER :0
+     4321/  3 | charger:0
+     4321/  3 | APP_BATTERY_CHARGER_PLUGOUT nv_role ff
+[15:11:37.152]      4591/  2 | app_status_indication_execute 1
+     4591/  2 | app_status_indication_execute 2
+     4591/  2 | delay complete!
+[15:11:38.881]      6320/  2 | tws_addr is false; bt_addr is false.
+     6320/  2 | Now the tws local address and the peer address are .
+     6320/  2 | Master addr:
+00 00 00 00 00 00 
+     6321/  2 | Slave addr:
+00 00 00 00 00 4d 
+     6321/  2 | Remove all history tws nv records.
+     6321/  2 | Master addr:
+00 00 00 00 00 00 
+     6322/  2 | Slave addr:
+00 00 00 00 00 00 
+     6322/  2 | ibrt_ui_log:power on enter pairing
+     6323/  2 | ibrt_ui_log:judge scan=SEARCH_SLAVE, link_type=NO_LINK_TYPE, access_mode=0x13, pairing_mode=0
+     6323/  2 | ibrt_ui_log:set_access_mode=19, ca=0xc04cf79
+     6324/  2 | write_scan_enable=3
+     6324/  2 | ibrt_ui_log:btif_me_set_accessible_mode status:02
+[15:11:39.162]      6606/  5 | [BTEVENT] evt = 10
+     6606/  5 | [BTEVENT] ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x3
+     6606/  5 | app_bt_manager_ibrt_role_process
+
+     6606/  5 | ++++++++++++++++++++++++++++++++10
+
+     6606/  5 | The BTIF_BTEVENT is 10
+
+
+     6607/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=0
+     6607/  5 | ibrt_ui_log:accessible_change dest:255 curr:3 err:00
+     6607/  5 | BT_REG_OP: LC_STATE=0x0
+     6607/  5 | ibrt_ui_log:link_type=0, evtcode=10, status=0x0
+     6607/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 10
+     6608/  5 | BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!
+
+     6608/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   235   BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!	cnt=1
+[15:11:43.178]     10631/255 | CPU USAGE: busy=17 light=83 sys_deep=0 chip_deep=0
+[15:11:46.861]     14321/  2 | app_battery_timer_handler 0
+    14322/  2 | cosonic: currvolt:3791
+    14322/  3 | checker: IBRT_UNKNOW activeCons:0 curRole:255 nvRole:255
+    14322/  3 | checker: nv_role:255 current_role:255 access_mode:19
+00 00 00 00 00 00 
+00 00 00 00 00 00 
+    14323/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+    14324/  3 | checker: box_state:OUT_BOX/IN_BOX_CLOSED sm_run:0/0
+    14324/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+    14325/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+    14325/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+    14325/  3 | AFH 1:
+00 00 00 00 00 00 00 00 00 00 
+    14326/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+    14327/  3 | AFH EN:0 1 2 
+    14327/  3 | AFH ch num:0 0 0 
+    14327/  3 | clk off:0 0 0 
+    14328/  3 | bitoff:0 0 0 
+    14328/  3 | BT_REG_OP: LC_STATE=0x0
+[15:11:53.150]     20631/255 | CPU USAGE: busy=1 light=99 sys_deep=0 chip_deep=0
+[15:11:56.832]     24321/  2 | app_battery_timer_handler 0
+    24322/  2 | cosonic: currvolt:3788
+    24322/  3 | checker: IBRT_UNKNOW activeCons:0 curRole:255 nvRole:255
+    24322/  3 | checker: nv_role:255 current_role:255 access_mode:19
+00 00 00 00 00 00 
+00 00 00 00 00 00 
+    24323/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+    24324/  3 | checker: box_state:OUT_BOX/IN_BOX_CLOSED sm_run:0/0
+    24324/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+    24325/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+    24325/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+    24325/  3 | AFH 1:
+00 00 00 00 00 00 00 00 00 00 
+    24326/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+    24327/  3 | AFH EN:0 1 2 
+    24327/  3 | AFH ch num:0 0 0 
+    24327/  3 | clk off:0 0 0 
+    24328/  3 | bitoff:0 0 0 
+    24328/  3 | BT_REG_OP: LC_STATE=0x0
+[15:12:05.046]     32561/255 | CPU USAGE: busy=2 light=30 sys_deep=0 chip_deep=68
+[15:12:06.812]     34330/  2 | app_battery_timer_handler 0
+    34330/  2 | cosonic: currvolt:3786
+    34330/  3 | checker: IBRT_UNKNOW activeCons:0 curRole:255 nvRole:255
+    34331/  3 | checker: nv_role:255 current_role:255 access_mode:19
+00 00 00 00 00 00 
+00 00 00 00 00 00 
+    34332/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+    34332/  3 | checker: box_state:OUT_BOX/IN_BOX_CLOSED sm_run:0/0
+    34332/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+    34333/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+    34333/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+    34334/  3 | AFH 1:
+00 00 00 00 00 00 00 00 00 00 
+    34334/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+    34335/  3 | AFH EN:0 1 2 
+    34335/  3 | AFH ch num:0 0 0 
+    34336/  3 | clk off:0 0 0 
+    34336/  3 | bitoff:0 0 0 
+    34336/  3 | BT_REG_OP: LC_STATE=0x0
+[15:12:08.753]     36277/  3 | app_ibrt_ui_test_key 1,8
+    36278/  3 | app_ibrt_search_ui_handle_key status->code=:1,status->event=:8,Com_key=:0
+    36278/  3 | hf_callheld:0
+
+    36278/  3 | hfchan_call:0
+[15:12:08.760] 
+    36278/  3 | hf_audio_state:0
+
+    36279/  3 | hfchan_callSetup:0
+
+    36279/  3 | a2dp_state:0
+
+    36279/  3 | a2dp_streamming:0
+
+    36279/  3 | APP_KEY_EVENT_CLICK!!
+
+
+    36280/  3 | app_tws_ibrt_mobile_link_connected return is False 
+
+    36280/  3 | app_tws_ibrt_slave_ibrt_link_connected return is False
+
+    36280/  3 | app_tws_ibrt_tws_link_connected return is False
+
+    36280/  3 | current role is ff/ nv_role is ff
+    36281/  3 | Hello world +++++++
+
+
+    36281/  3 | Now the tws local address and the peer address are .
+    36281/  3 | Master addr:
+00 00 00 00 00 00 
+    36281/  3 | Slave addr:
+00 00 00 00 00 00 
+    36282/  3 | Remove all history tws nv records.
+    36282/  3 | Master addr:
+00 00 00 00 00 00 
+    36283/  3 | Slave addr:
+00 00 00 00 00 00 
+    36283/  3 | ibrt_ui_log:power on enter pairing
+    36284/  3 | ibrt_ui_log:judge scan=SEARCH_SLAVE, link_type=NO_LINK_TYPE, access_mode=0x13, pairing_mode=0
+    36284/  3 | ibrt_ui_log:set_access_mode=19, ca=0xc01a1a3
+    36284/  3 | ibrt_ui_log:filter access mode=19, current access mode=19
+[15:12:09.759]     37285/  3 | ibrt_ui_log:search tws direactly access_mode:19
+    37285/  3 | 
+ibrt_ui_log: find_tws_peer_device_start 462
+
+    37285/  3 | btif_me_register_global_handler 1076
+    37286/  3 | 
+find_tws_peer_device_start 478
+
+    37286/  3 | 
+find_tws_peer_device_start 481
+
+    37286/  3 | 
+find_tws_peer_device_start 487
+
+    37287/  3 | app_status_indication_execute 8
+[15:12:09.815]     37343/  5 | cmd_status:opcode 0x0401[HCI_INQUIRY], status=0x0[BT_ECODE_NO_ERROR]
+[15:12:10.492]     38016/  5 | HCI_EV_INQUIRY_RESULT_EXTINQ!
+    38016/  5 | ME: Inquiry result num resp = 1, bdaddr 11 34 33 22 11 11
+
+    38017/  5 | ME:Inquiry result clockOffset = 1128
+
+    38017/  5 | 
+enter: app_bt_inquiry_call_back 283
+
+    38017/  5 | get factory_section_p
+    38017/  5 | 
+app_bt_inquiry_call_back 297 BTEVENT_INQUIRY_RESULT
+
+    38017/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_inquiry_call_back   298   BTIF_BTEVENT_INQUIRY_RESULT	cnt=2
+11 34 33 22 11 11 
+    38018/  5 | inqmode = 2
+07 09 7a 77 70 5f 62 74 0f 03 01 00 0e 11 0f 11 0c 11 0b 11 
+    38018/  5 | ##RSSI:-32
+    38018/  5 | local 11 11 22 33 34 12
+
+    38018/  5 | <1>
+    38018/  5 | <2>
+    38019/  5 | <3> search name len 6 zwp_bt h ãµØˆ ô‰ ¬X local name zwp_bt
+
+    38019/  5 | <4>
+    38019/  5 | ibrt_ui_log:set_access_mode=0, ca=0xc01b845
+    38019/  5 | write_scan_enable=0
+    38019/  5 | ibrt_ui_log:btif_me_set_accessible_mode status:02
+    38020/  5 | set loc bt address status is 1.
+11 34 33 22 11 11 
+    38020/  5 | app_ibrt_config_the_same_bd_addr
+11 34 33 22 11 11 
+    38020/  5 | ibrt_ui_log:set_access_mode=2, ca=0xc01ba71
+    38020/  5 | ibrt_ui_log:btif_me_set_accessible_mode status sending:1 cnt:0
+    38021/  5 | ibrt_ui_log:backup access mode=2
+    38021/  5 | btif_me_unregister_globa_handler 1354
+    38021/  5 | app_tws_ibrt_update_info
+    38021/  5 | ##nv_record_update_ibrt_info,0
+    38021/  5 | set mpu 0x200027e0 len 128
+    38022/  5 | [BTEVENT] evt = 10
+    38023/  5 | [BTEVENT] ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x0
+    38023/  5 | app_bt_manager_ibrt_role_process
+
+    38023/  5 | ++++++++++++++++++++++++++++++++10
+
+    38023/  5 | The BTIF_BTEVENT is 10
+
+
+    38023/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=3
+    38023/  5 | ibrt_ui_log:pickup access mode=2
+    38024/  5 | ibrt_ui_log:accessible_change dest:2 curr:0 err:00
+    38024/  5 | write_scan_enable=2
+    38024/  5 | BT_REG_OP: LC_STATE=0x0
+    38024/  5 | ibrt_ui_log:link_type=0, evtcode=10, status=0x0
+    38024/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 10
+    38025/  5 | BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!
+
+    38025/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   235   BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!	cnt=4
+    38028/  5 | [BTEVENT] evt = 10
+    38028/  5 | [BTEVENT] ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x2
+    38028/  5 | app_bt_manager_ibrt_role_process
+
+    38028/  5 | ++++++++++++++++++++++++++++++++10
+
+    38028/  5 | The BTIF_BTEVENT is 10
+
+
+    38028/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=5
+    38029/  5 | ibrt_ui_log:accessible_change dest:255 curr:2 err:00
+    38029/  5 | BT_REG_OP: LC_STATE=0x0
+    38029/  5 | ibrt_ui_log:link_type=0, evtcode=10, status=0x0
+    38029/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 10
+    38029/  5 | BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!
+
+    38029/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   235   BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!	cnt=6
+[15:12:10.992]     38521/  2 | app_tws_delay_connect_handler
+    38521/  2 | ibrt_ui_log: [IO] app_ibrt_ui_event_entry,event=TWS_PAIRING_EVENT
+    38521/  2 | ibrt_ui_log:current box state=OUT_BOX
+    38521/  2 | ibrt_ui_log:current running event=TWS_PAIRING_EVENT
+    38522/  2 | BT_REG_OP:do not need modify lm_nb_sync val=0, status=255
+    38522/  2 | ibrt_ui_log:judge scan=CONNECT_TWS, link_type=TWS_LINK, access_mode=0x2, pairing_mode=0
+    38523/  2 | ibrt_ui_log:set_access_mode=2, ca=0xc021acd
+    38523/  2 | ibrt_ui_log:filter access mode=2, current access mode=2
+    38524/  2 | btm_conn_acl_req:ca=0xc02a9bb
+    38524/  2 | 
+[module btm, line 1823]: 
+    38524/  2 | 
+
+11 34 33 22 11 11 
+    38525/  2 | btm_conn_add_new btm connection,malloc acl link=0x2000d1f0,index=0
+    38525/  2 | btif_cmgr_init_sniff_timer 0x2000d220
+11 34 33 22 11 11 
+    38526/  2 | btif_create_acl_to_slave status:0x2
+11 34 33 22 11 11 
+    38526/  2 | ibrt_ui_log:tws_pairing enter=IDLE, exit=TWS_CONNECTED
+    38527/  2 |  COSONIC:app_ibrt_customif_ui_global_event_update: 267
+    38527/  2 | IBRT_UI_W4_TWS_INFO_EXCHANGE_COMPLETE
+    38527/  2 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_event_update   320   IBRT_UI_W4_TWS_INFO_EXCHANGE_COMPLETE	cnt=7
+[15:12:11.210]     38743/  5 | cmd_status:opcode 0x0405[HCI_CREATE_CONNECTION], status=0x0[BT_ECODE_NO_ERROR]
+    38743/  5 | hci_cmd_status:create acl connection,opcode=0x0405
+[15:12:11.362]     38891/  5 | HCI_EV_CONN_COMPLETE!
+    38891/  5 | [BTEVENT] evt = 7
+    38891/  5 | Dev 0 enters connecting profiles state
+    38891/  5 | btif_me_get_pendCons:conn 0x2000d1f0, state 0x3[BTM_ACL_ST_CONNECTED]
+    38891/  5 | MEC(pendCons) is 0
+    38892/  5 | btif_cmgr_clear_sniff_timer handler 0x2000d220 timer 0
+    38892/  5 | btif_cmgr_disable_sniff_timer handler 0x2000d220 timer 0
+    38892/  5 | [BTEVENT] CONNECT_IND/CNF evt:7 errCode:0x0 newRole:0 activeCons:1
+11 34 33 22 11 11 
+    38892/  5 | app_bt_manager_ibrt_role_process
+
+    38892/  5 | ++++++++++++++++++++++++++++++++7
+
+    38893/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   204   BTIF_BTEVENT_LINK_CONNECT_CNF	cnt=8
+    38893/  5 | local:11 remd:11
+    38893/  5 | app_tws_ibrt_update_info
+    38893/  5 | ##nv_record_update_ibrt_info,0
+    38893/  5 | set mpu 0x200027e0 len 128
+    38893/  5 | #right
+    38893/  5 | BT_REG_OP:Set the lsto for hciHandle=0x81, from:0x7d00 to 0xc80
+    38894/  5 | BT_REG_OP:ACL tx silence clear idx=1
+
+    38894/  5 | BT_DRV:set fa invert en=1
+    38894/  5 | btif_besaud_client_create
+    38894/  5 | Besaud_Connect
+
+ 11 34 33 22 11 11
+    38894/  5 | BesaudConnect chnl=2000cdb8,RemDev=2000d1f0
+11 34 33 22 11 11 
+    38895/  5 | l2cap_conn_add_new,malloc conn=200137b4
+    38895/  5 | besaud l2cap channel count--=0
+    38895/  5 | ui_log:l2cap alloc,conn=200137b4,psm=0x33[PSM_BESAUD],cid=64,l2c handle=1
+    38895/  5 | l2cap_open:new acl connection!
+    38895/  5 | l2cap_open:send connect req channel 2000dbd0
+    38895/  5 | l2cap_send_connect_req:state=0[L2CAP_CLOSE], psm=0x33[PSM_BESAUD]
+    38896/  5 | ui_log:L2C send req (Opcode 2)
+    38896/  5 | ui_log:l2cap,generate sigid=32
+    38896/  5 | app_bt_manager_ibrt_role_process
+
+    38896/  5 | ++++++++++++++++++++++++++++++++98
+
+    38896/  5 | The BTIF_BTEVENT is 98
+
+
+    38897/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=9
+    38897/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38897/  5 | l2cap open psm:0x33[PSM_BESAUD], newhandle:1
+
+    38897/  5 | BesaudConnect l2cap_handle=0x1
+    38897/  5 | Besaud_Connect  status=0
+
+    38898/  5 | ibrt_ui_log:tws link connected,handle=81
+    38898/  5 | BT_REG_OP: LC_STATE=0x3c00
+    38898/  5 | linkid =1, tx flow=0
+    38898/  5 | ##app_ibrt_nvrecord_update_ibrt_mode_tws,1
+    38898/  5 | set mpu 0x200027e0 len 128
+    38898/  5 | hack slot id=1,slot=1
+    38899/  5 | ibrt_ui_log:link_type=TWS_LINK, evt_type=LINK_CONNECT_CNF, evtcode=7, status=0x0
+    38899/  5 | ibrt_ui_log:role is unknow, wait tws info exchange
+    38899/  5 | ibrt_ui_log:set_access_mode=0, ca=0xc01d7b5
+    38899/  5 | write_scan_enable=0
+    38900/  5 | ibrt_ui_log:btif_me_set_accessible_mode status:02
+    38900/  5 | ibrt_ui_log:judge scan=CONNECTED, link_type=TWS_LINK, access_mode=0x0, pairing_mode=0
+    38900/  5 | ibrt_ui_log:set_access_mode=0, ca=0xc020f53
+    38900/  5 | ibrt_ui_log:filter access mode=0, current access mode=0
+    38900/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 7
+    38901/  5 | BTIF_BTEVENT_LINK_CONNECT_CNF
+    38901/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   131   BTIF_BTEVENT_LINK_CONNECT_CNF	cnt=10
+    38902/  5 | HCI_EV_MAX_SLOTS_CHNG!
+    38903/  5 | [BTEVENT] evt = 10
+    38903/  5 | [BTEVENT] ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x0
+    38904/  5 | app_bt_manager_ibrt_role_process
+
+    38904/  5 | ++++++++++++++++++++++++++++++++10
+
+    38904/  5 | The BTIF_BTEVENT is 10
+
+
+    38904/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=11
+    38904/  5 | ibrt_ui_log:accessible_change dest:255 curr:0 err:00
+    38904/  5 | BT_REG_OP: LC_STATE=0x3c00
+    38904/  5 | linkid =1, tx flow=0
+    38905/  5 | ibrt_ui_log:link_type=0, evtcode=10, status=0x0
+
+LOST 6
+    38913/  5 | remote feature 0081 0 bf ee cd fa db bd 7b 87
+
+    38913/  5 | unconf_dec:conn=0x2000d1f0,unconf=0
+    38914/  5 | NuOfCoEv:hdl=0x81,comp=1,acl_left=4
+    38921/  5 | app_bt_manager_ibrt_role_process
+
+    38921/  5 | ++++++++++++++++++++++++++++++++98
+
+    38921/  5 | The BTIF_BTEVENT is 98
+
+
+    38921/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=13
+    38921/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38922/  5 | btm_acl_handle:alloc inplace for conn=0x2000d1f0,0x2000d424
+    38922/  5 | l2cap_send_cfg_req:
+    38922/  5 | ui_log:l2cap,generate sigid=33
+    38922/  5 | app_bt_manager_ibrt_role_process
+
+    38922/  5 | ++++++++++++++++++++++++++++++++98
+
+    38922/  5 | The BTIF_BTEVENT is 98
+
+
+    38923/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=14
+    38923/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38929/  5 | unconf_dec:conn=0x2000d1f0,unconf=0
+    38929/  5 | NuOfCoEv:hdl=0x81,comp=1,acl_left=4
+    38936/  5 | app_bt_manager_ibrt_role_process
+
+    38936/  5 | ++++++++++++++++++++++++++++++++98
+
+    38936/  5 | The BTIF_BTEVENT is 98
+
+
+    38936/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=15
+    38937/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38937/  5 | l2cap_get_cfg_rsp:state=6[L2CAP_WAIT_CONFIG_REQ_RSP]
+    38938/  5 | app_bt_manager_ibrt_role_process
+
+    38938/  5 | ++++++++++++++++++++++++++++++++98
+
+    38939/  5 | The BTIF_BTEVENT is 98
+
+
+    38939/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=16
+    38939/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38939/  5 | l2cap_get_cfg_req:state=8[L2CAP_WAIT_CONFIG_REQ]
+    38939/  5 | l2cap_send_cfg_rsp:
+    38940/  5 | app_bt_manager_ibrt_role_process
+
+    38940/  5 | ++++++++++++++++++++++++++++++++98
+
+    38940/  5 | The BTIF_BTEVENT is 98
+
+
+    38940/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=17
+    38940/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38940/  5 | l2cap handle 1 opened, scid=0x40, dcid=0x40, psm=[PSM_BESAUD]
+    38941/  5 | besaud_l2cap_notify:L2CAP_CHANNEL_OPEN, chnl 0x2000cdb8, remDev 0x2000d1f0
+    38941/  5 | BT_REG_OP: LC_STATE=0x100
+    38941/  5 | linkid =1, tx flow=1
+    38941/  5 | ibrt_ui_log:l_info,mobile_conn=0,constate=0x0,ibrt_conn=0,sm=0,b_sta=OUT_BOX,evt=TWS_PAIRING_EVENT
+    38942/  7 | ibrt_ui_log:-------TRS:0000 cmdcode=SHARE_TWS_INFO------->
+    38942/  5 | ibrt_ui_log:tws_pairing enter=TWS_CONNECTED, exit=INFO_EXCHANGE
+    38942/  5 |  COSONIC:app_ibrt_customif_ui_global_event_update: 267
+    38942/  5 | IBRT_UI_W4_MOBILE_CONNECTION
+    38942/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_event_update   338   IBRT_UI_W4_MOBILE_CONNECTION	cnt=18
+    38943/  5 | ibrt_ui_log:judge policy=TWS_INIT, policy=5
+    38943/  5 | btif_me_set_link_policy:rem_dev=0x2000d1f0,policy=0x5,ca=0xc01d3e1
+    38943/  5 | ibrt_ui_log:event_handler, action=TWS_CONNECT, state=IDLE, status=0x0
+
+    38944/  5 | ibrt_ui_log:error action, state=IDLE, active_evt=TWS_PAIRING_EVENT
+    38944/  5 | ibrt_ui_log:link_type=TWS_LINK, evt_type=BES_AUD_CONNECTED, evtcode=200, status=0x0
+    38944/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 200
+    38944/  5 | BTIF_BTEVENT_BES_AUD_CONNECTED
+    38944/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   178   BTIF_BTEVENT_BES_AUD_CONNECTED	cnt=19
+    38944/  5 | cosonic:enter pairing mode!
+    38944/  5 | app_status_indication_execute 9
+    38945/  5 | btif_besaud_callback connected
+    38945/  5 | btm_security_askfor_authority channel initiator 1 conn positive 1
+
+    38946/  5 | app_bt_manager_ibrt_role_process
+
+    38946/  5 | ++++++++++++++++++++++++++++++++98
+
+    38946/  5 | The BTIF_BTEVENT is 98
+
+
+    38947/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=20
+    38947/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38947/  5 | ibrt_ui_log:TXDONE:0000 cmdcode=SHARE_TWS_INFO
+    38950/  5 | unconf_dec:conn=0x2000d1f0,unconf=1
+    38950/  5 | NuOfCoEv:hdl=0x81,comp=1,acl_left=3
+    38951/  5 | cmd_status:opcode 0x0411[HCI_AUTH_REQ], status=0x0[BT_ECODE_NO_ERROR]
+    38952/  5 | HCI_EV_LINK_KEY_REQ!
+    38952/  5 | link_key_req
+00 00 00 00 00 00 00 00 bd ee 00 0c d4 7b 08 3c 
+    38953/  5 | Link key not exist
+    38954/  5 | unconf_dec:conn=0x2000d1f0,unconf=0
+    38954/  5 | NuOfCoEv:hdl=0x81,comp=1,acl_left=4
+    38955/  5 | HCI_EV_IO_CAPABILITY_REQUEST!
+    38965/  5 | app_bt_manager_ibrt_role_process
+
+    38965/  5 | ++++++++++++++++++++++++++++++++98
+
+    38965/  5 | The BTIF_BTEVENT is 98
+
+
+    38965/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=21
+    38965/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38966/  5 | ibrt_ui_log:<-----------RCV:0000 cmdcode=NOTIFY_POLICY-------
+    38967/  5 | btif_me_set_link_policy:rem_dev=0x2000d1f0,policy=0x5,ca=0xc0257dd
+    38968/  5 | app_bt_manager_ibrt_role_process
+
+    38968/  5 | ++++++++++++++++++++++++++++++++98
+
+    38968/  5 | The BTIF_BTEVENT is 98
+
+
+    38968/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=22
+    38969/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38970/  5 | ibrt_ui_log:<-----------RCV_RSP:0000 cmdcode=SHARE_TWS_INFO-------
+    38970/  5 | ibrt_ui_log:role judge condition=3
+    38970/  5 | ibrt_ui_log:judge role,local_role=0,peer_role=0x1,mobile_handle=0xffff,ibrt_hanle=0xffff
+    38970/  5 | ibrt_ui_log:judge scan=IBRT_ROLE_JUDGE, link_type=NO_LINK_TYPE, access_mode=0x2, pairing_mode=0
+    38971/  5 | ibrt_ui_log:set_access_mode=2, ca=0xc024ec5
+    38971/  5 | write_scan_enable=2
+    38971/  5 | ibrt_ui_log:btif_me_set_accessible_mode status:02
+    38971/  5 | ibrt_ui_log:event_handler, action=INFO_EXCHANGE, state=IDLE, status=0x0
+
+    38971/  5 | ibrt_ui_log:error action, state=IDLE, active_evt=TWS_PAIRING_EVENT
+    38972/  5 |  COSONIC:app_ibrt_customif_ui_pairing_set: 595
+    38972/  5 | ibrt_ui_log: TWS_PAIR_MODE_ENTER set pairing mode
+    38972/  5 | ibrt_ui_log:judge scan=ENTER_PAIRING_MODE, link_type=NO_LINK_TYPE, access_mode=0x3, pairing_mode=1
+    38972/  5 | ibrt_ui_log:set_access_mode=3, ca=0xc020297
+    38972/  5 | ibrt_ui_log:btif_me_set_accessible_mode status sending:1 cnt:0
+    38972/  5 | ibrt_ui_log:backup access mode=3
+    38973/  5 | ibrt_ui_log:active event=TWS_PAIRING_EVENT, consume_ms=451
+    38973/  5 | ibrt_ui_log:tws_pairing enter=INFO_EXCHANGE, exit=IDLE
+    38973/  5 |  COSONIC:app_ibrt_customif_ui_global_event_update: 267
+    38973/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_event_update   301   IBRT_UI_IDLE	cnt=23
+    38973/  5 | ibrt_ui_log:p_info,mobile_conn=0,constate=0x0,ibrt_conn=0,sm_run=0,box_state=OUT_BOX,run_evt=NONE_EVENT
+    38974/  7 | ibrt_ui_log:-------TRS:0001 cmdcode=NOTIFY_POLICY------->
+    38974/  5 | HCI_EV_IO_CAPABILITY_RESPONSE!
+    38975/  5 | app_bt_manager_ibrt_role_process
+
+    38976/  5 | ++++++++++++++++++++++++++++++++98
+
+    38976/  5 | The BTIF_BTEVENT is 98
+
+
+    38976/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=24
+    38976/  5 | ibrt_ui_log: ACL_DATA_ACTIVE TWS_LINK only
+    38976/  5 | ibrt_ui_log:TXDONE:0001 cmdcode=NOTIFY_POLICY
+    38979/  5 | [BTEVENT] evt = 10
+    38979/  5 | [BTEVENT] ACCESSIBLE_CHANGE evt:10 errCode:0x0 aMode=0x2
+    38979/  5 | app_bt_manager_ibrt_role_process
+
+    38979/  5 | ++++++++++++++++++++++++++++++++10
+
+    38979/  5 | The BTIF_BTEVENT is 10
+
+
+    38979/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=25
+    38979/  5 | ibrt_ui_log:pickup access mode=3
+    38980/  5 | ibrt_ui_log:accessible_change dest:3 curr:2 err:00
+    38980/  5 | write_scan_enable=3
+    38980/  5 | BT_REG_OP: LC_STATE=0x1000
+    38981/  5 | linkid =1, tx flow=1
+    38981/  5 | ibrt_ui_log:link_type=0, evtcode=10, status=0x0
+    38981/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 10
+[15:12:11.689] 
+LOST 17
+    39222/  5 | HCI_EV_USER_CONFIRMATION_REQUEST!
+[15:12:11.981]     39511/  5 | HCI_EV_SIMPLE_PAIRING_COMPLETE!
+    39511/  5 | [BTEVENT] evt = 17
+    39511/  5 | app_bt_manager_ibrt_role_process
+
+    39511/  5 | ++++++++++++++++++++++++++++++++17
+
+    39511/  5 | The BTIF_BTEVENT is 17
+
+
+    39511/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=29
+    39512/  5 | BT_REG_OP: LC_STATE=0x2700
+    39512/  5 | linkid =1, tx flow=1
+    39512/  5 | ibrt_ui_log:link_type=0, evtcode=17, status=0x0
+    39512/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 17
+    39512/  5 | BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!
+
+    39512/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   235   BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!	cnt=30
+    39522/  5 | HCI_EV_LINK_KEY_NOTIFY!
+    39522/  5 | btm_process_link_key_notify_evt:keytype 0x4, timer_handle_pairing=0x0
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39523/  5 | paired Bt dev:1
+    39523/  5 | Is to flush nv: 1
+    39523/  5 | nv record bdAddr = 
+11 34 33 22 11 11 
+    39523/  5 | record_trusted = 
+0 
+    39523/  5 | record_linkKey = 
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39524/  5 | record_keyType = 
+4 
+    39524/  5 | record_pinLen = 
+d1 
+    39524/  5 | nv record bdAddr = 
+11 34 33 22 11 11 
+    39524/  5 | record_trusted = 
+0 
+    39524/  5 | record_linkKey = 
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39525/  5 | record_keyType = 
+4 
+    39525/  5 | record_pinLen = 
+d1 
+    39525/  5 | set mpu 0x200027e0 len 128
+    39525/  5 | !!!pair_handler_func event:0
+
+    39525/  5 | app_voice_report_handler 14
+    39526/  5 | [app_ibrt_if_voice_report_init] skip aud_id:15
+    39526/  5 | btif_a2dp_get_stream_state:null pointer calll:ca=0xc019b9b
+    39526/  5 | !!!!!!!!!! flash_flush
+    39536/  5 | nv_record_extension_flush: norflash_api_erase ok,addr = 0x380fc000.
+    39538/  5 | set mpu 0x200027e0 len 128
+[15:12:12.032]     39538/  5 | nv_record_extension_flush: norflash_api_write ok,addr = 0x380fc000.
+    39559/  5 | nv_extension_callback:type = 1, addr = 0x380fc000,len = 0x1000,remain = 0,result = 0.
+    39560/  5 | HCI_EV_AUTHENTICATION_COMPLETE!
+    39560/  5 | [BTEVENT] HANDER AUTH error=0
+    39560/  5 | [BTEVENT] evt = 11
+    39560/  5 | app_bt_manager_ibrt_role_process
+
+    39560/  5 | ++++++++++++++++++++++++++++++++11
+
+    39561/  5 | The BTIF_BTEVENT is 11
+
+
+    39561/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=31
+    39561/  5 | BT_REG_OP: LC_STATE=0x100
+    39561/  5 | linkid =1, tx flow=1
+    39561/  5 | ibrt_ui_log:link_type=0, evtcode=11, status=0x0
+    39561/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 11
+    39562/  5 | BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!
+
+    39562/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   235   BTIF_BTEVENT_MODE_UNKNOWN Event !!!!!!!!	cnt=32
+    39562/  5 | !!!pair_handler_func event:0
+
+    39562/  5 | app_voice_report_handler 14
+    39562/  5 | [app_ibrt_if_voice_report_init] skip aud_id:15
+    39562/  5 | btif_a2dp_get_stream_state:null pointer calll:ca=0xc019b9b
+    39563/  5 | !!!!!!!!!! flash_flush
+    39564/  5 | cmd_status:opcode 0x0413[HCI_SET_CONN_ENCRYPTION], status=0x0[BT_ECODE_NO_ERROR]
+[15:12:12.063]     39593/  5 | HCI_EV_ENCRYPTION_CHANGE!
+    39593/  5 | btm_security_encryption_change touch nv
+11 34 33 22 11 11 
+    39593/  5 | paired Bt dev:1
+    39593/  5 | Is to flush nv: 0
+    39593/  5 | nv record bdAddr = 
+11 34 33 22 11 11 
+    39594/  5 | record_trusted = 
+0 
+    39594/  5 | record_linkKey = 
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39594/  5 | record_keyType = 
+4 
+    39594/  5 | record_pinLen = 
+d1 
+    39594/  5 | nv record bdAddr = 
+11 34 33 22 11 11 
+    39594/  5 | record_trusted = 
+0 
+    39595/  5 | record_linkKey = 
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39595/  5 | record_keyType = 
+4 
+    39595/  5 | record_pinLen = 
+d1 
+    39595/  5 | set mpu 0x200027e0 len 128
+    39595/  5 | [BTEVENT] evt = 12
+    39596/  5 | app_bt_manager_ibrt_role_process
+
+    39596/  5 | ++++++++++++++++++++++++++++++++12
+
+    39596/  5 | The BTIF_BTEVENT is 12
+
+
+    39596/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=33
+    39596/  5 |  COSONIC:app_ibrt_customif_tws_connected_ind: 460
+    39596/  5 | app_ibrt_if_config_keeper_tws_update success
+11 34 33 22 11 11 
+43 d0 96 10 a0 0a 88 41 19 8c 5b d7 47 bc 19 95 
+    39597/  5 | app_ibrt_if_config_keeper_flush crc:17fe06c1
+    39597/  5 | BT_REG_OP: LC_STATE=0x100
+    39597/  5 | linkid =1, tx flow=1
+    39597/  5 | set tws link id =1
+    39597/  5 | ibrt_ui_log:app_tws_ibrt_timing_control,enable=0,type =0x4,ACL interv=100, ACL inter in sco=156
+    39598/  5 | BT_REG_OP:Set private tws interval,acl interv=100,acl interv in sco=156
+    39598/  5 | ibrt_ui_log:link_type=TWS_LINK, evt_type=ENCRYPTION_CHANGE, evtcode=12, status=0x0
+    39598/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 12
+    39598/  5 | BTIF_BTEVENT_ENCRYPTION_CHANGE
+    39598/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   218   BTIF_BTEVENT_ENCRYPTION_CHANGE	cnt=34
+    39598/  5 | 
+The mobile link is false !!!!!!!!!!!!!!!!!!!!!
+
+[15:12:15.020]     42562/255 | CPU USAGE: busy=3 light=61 sys_deep=0 chip_deep=36
+[15:12:16.811]     44354/  2 | app_battery_timer_handler 0
+    44355/  2 | cosonic: currvolt:3784
+    44355/  3 | checker: IBRT_UNKNOW activeCons:1 curRole:0 nvRole:0
+    44356/  3 | checker: nv_role:0 current_role:0 access_mode:3
+11 34 33 22 11 11 
+11 34 33 22 11 11 
+    44356/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+    44357/  3 | checker: box_state:OUT_BOX/OUT_BOX sm_run:0/0
+    44357/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+    44358/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+    44358/  3 | BT_REG_OP: hciHandle:81 chnmap
+b0 08 b8 84 12 07 00 02 96 00 
+    44359/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+    44359/  3 | AFH 1:
+b0 08 b8 84 12 07 00 02 96 00 
+    44360/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+    44360/  3 | AFH EN:0 4901 2 
+    44361/  3 | AFH ch num:0 14 0 
+    44361/  3 | clk off:0 0 0 
+    44361/  3 | bitoff:0 0 0 
+    44362/  3 | BT_REG_OP: LC_STATE=0x100
+    44362/  3 | linkid =1, tx flow=1
+[15:12:21.373]     48934/  5 | ibrt_ui_log:sniff allowed
+
+    48934/  5 | app_tws_ibrt_sniff_timeout_handler handler 0x2000d220 timeout 10000 role 0 type:3 act_evt:0 skip:0
+    48934/  5 | btif_me_start_sniff dev 0x2000d1f0 lowpow 0
+11 34 33 22 11 11 
+    48936/  5 | cmd_status:opcode 0x0803[HCI_SNIFF_MODE], status=0x0[BT_ECODE_NO_ERROR]
+[15:12:21.451]     49009/  5 | HCI_EV_MODE_CHANGE!
+    49009/  5 | Changed to sniff mode.
+    49009/  5 | [BTEVENT] evt = 9
+    49009/  5 | [BTEVENT] MODE_CHANGE evt:9 errCode:0x0 curMode=0x2, interval=254 
+11 34 33 22 11 11 
+    49010/  5 | app_bt_manager_ibrt_role_process
+
+    49010/  5 | ++++++++++++++++++++++++++++++++9
+
+    49010/  5 | The BTIF_BTEVENT is 9
+
+
+    49010/  5 | COSONIC:   TEST   STATUSMACHINE   app_bt_manager_ibrt_role_process   241   BTIF_BTEVENT_LINK_CONNECT_OTHER!!!!!!	cnt=35
+    49010/  5 | ibrt_ui_log: mode change event, errCode=0x0 curMode=0x2, interval=254 
+    49011/  5 | ibrt_ui_log: mode change event link type=3, mobile_mode=0, tws_mode=0
+11 34 33 22 11 11 
+    49011/  5 | BT_REG_OP: LC_STATE=0x100
+    49011/  5 | linkid =1, tx flow=1
+    49011/  5 | ibrt_ui_log:link_type=TWS_LINK, evt_type=MODE_CHANGE, evtcode=9, status=0x0
+    49011/  5 |  COSONIC:app_ibrt_customif_ui_global_handler_ind: 9
+    49012/  5 | BTIF_BTEVENT_MODE_CHANGE
+    49012/  5 | COSONIC:   TEST   STATUSMACHINE   app_ibrt_customif_ui_global_handler_ind   230   BTIF_BTEVENT_MODE_CHANGE	cnt=36
+[15:12:24.991]     52562/255 | CPU USAGE: busy=1 light=99 sys_deep=0 chip_deep=0
+[15:12:26.782]     54354/  2 | app_battery_timer_handler 0
+    54355/  2 | cosonic: currvolt:3781
+    54355/  3 | checker: IBRT_UNKNOW activeCons:1 curRole:0 nvRole:0
+    54356/  3 | checker: nv_role:0 current_role:0 access_mode:3
+11 34 33 22 11 11 
+11 34 33 22 11 11 
+    54356/  3 | checker: super_state:IDLE/IDLE evt:NONE_EVENT plf:0
+    54357/  3 | checker: box_state:OUT_BOX/OUT_BOX sm_run:0/0
+    54357/  3 | BT_REG_OP: rxbuff = 2,embuff =4 , host rx buff in controller = 6,6
+    54358/  3 | BT_REG_OP:txbuff = 5,acl tx host  in controller = 4 
+    54358/  3 | BT_REG_OP: hciHandle:81 chnmap
+b0 28 78 22 0a 20 09 80 84 20 
+    54358/  3 | BT_REG_OP:AFH 0:
+00 00 00 00 00 00 00 00 00 00 
+    54359/  3 | AFH 1:
+b0 28 78 22 0a 20 09 80 84 20 
+    54360/  3 | AFH 2:
+00 00 00 00 00 00 00 00 00 00 
+    54360/  3 | AFH EN:0 4901 2 
+    54361/  3 | AFH ch num:0 14 0 
+    54361/  3 | clk off:0 0 0 
+    54361/  3 | bitoff:0 0 0 
+    54361/  3 | BT_REG_OP: LC_STATE=0x100
+    54362/  3 | linkid =1, tx flow=1
