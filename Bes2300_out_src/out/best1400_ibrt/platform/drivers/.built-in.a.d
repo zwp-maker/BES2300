@@ -1,2 +1,0 @@
-
-cmd_platform/drivers/built-in.a := ( /usr/bin/printf 'create platform/drivers/built-in.a\n addmod \n addlib platform/drivers/ana/built-in.a\n addlib platform/drivers/codec/built-in.a\n addlib platform/drivers/norflash/built-in.a\n addlib platform/drivers/bt/built-in.a\n addlib platform/drivers/btpcm/built-in.a\n addlib platform/drivers/sbcacc/built-in.a\n addlib platform/drivers/usb/built-in.a\nsave\nend' | arm-none-eabi-ar -M )

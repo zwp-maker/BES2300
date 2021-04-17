@@ -1,2 +1,0 @@
-
-cmd_services/nv_section/built-in.a := ( /usr/bin/printf 'create services/nv_section/built-in.a\n addmod \n addlib services/nv_section/aud_section/built-in.a\n addlib services/nv_section/customparam_section/built-in.a\n addlib services/nv_section/log_section/built-in.a\n addlib services/nv_section/factory_section/built-in.a\n addlib services/nv_section/userdata_section/built-in.a\nsave\nend' | arm-none-eabi-ar -M )
